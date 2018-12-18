@@ -4,8 +4,11 @@
 target 'Nobel' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
-  # Pods for Nobel
+  
+  pod 'Alamofire'
+  pod 'AlamofireImage'
+  pod 'Realm'#, :git => 'https://github.com/realm/realm-cocoa.git', :submodules => true
+  pod 'RealmSwift'#, :git => 'https://github.com/realm/realm-cocoa.git', :submodules => true
 
   target 'NobelTests' do
     inherit! :search_paths
