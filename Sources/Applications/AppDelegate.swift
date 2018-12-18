@@ -17,7 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          * Welcome to Nobel.
          * Copyright (c) Yuichi Nakayasu. All rights reserved.
          */
+
+        Realm: open \(Realm.path)
         """)
+        
         return true
     }
     

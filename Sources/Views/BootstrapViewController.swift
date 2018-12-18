@@ -21,6 +21,17 @@ class BootstrapViewController: UITableViewController {
                 Wireframe.showTest(from: bootstrap)
             }),
             ]),
+        (section: "書籍リポジトリテスト",
+         rows: [
+            (title: "読み込み", handler: { _ in
+                let mock = BookInteractorOutputMock()
+                mock.interactor.load()
+            }),
+            (title: "作成", handler: { _ in
+                let mock = BookInteractorOutputMock()
+                mock.interactor.create()
+            }),
+            ]),
         ]
     // =========================================================================
     

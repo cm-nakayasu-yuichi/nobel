@@ -4,41 +4,45 @@
 //
 import UIKit
 
+/// 書籍
 class Book {
     
     /// ID
-    var id = ""
+    var id: String!
     
     /// 作品名
-    var name = "新しい作品"
+    var name: String!
     
     /// 作者名
-    var author = ""
+    var author: String!
     
     /// あらすじタイトル
-    var outlineTitle = ""
+    var outlineTitle: String!
     
     /// あらすじ
-    var outline = ""
+    var outline: String!
     
     /// しおりをしたチャプタのインデックス
-    var bookmarkedChapterIndex = 0
+    var bookmarkedChapterIndex: Int!
     
     /// しおりをしたページのインデックス
-    var bookmarkedPageIndex = 0
+    var bookmarkedPageIndex: Int!
     
     /// 編集不可かどうか
-    var isLocked = false
+    var isLocked: Bool!
     
     /// カラーテーマ
-    var colorTheme = ColorTheme.standard
+    var colorTheme: ColorTheme!
     
     /// 文字サイズ
-    var textSize = TextSize.standard
+    var textSize: TextSize!
     
     /// フォント
-    var fontType = FontType.standard
+    var fontType: FontType!
+    
+    /// ソート番号
+    var sort: Int!
     
     /// 章リスト
-    var chapters = [Chapter]()
+    var chapters: [Chapter]!
 }
