@@ -16,6 +16,11 @@ protocol RealmIncrementableIdentifiedObject {
     var id: Int { get set }
 }
 
+protocol RealmSortableObject {
+    
+    var sort: Int { get set }
+}
+
 extension RealmIdentifiedObject where Self: RealmSwift.Object {
     
     static func generateId(_ number: Int = 1) -> String {
@@ -58,7 +63,7 @@ extension NSPredicate {
 
 extension RealmIncrementableIdentifiedObject where Self: RealmSwift.Object {
     
-    func incrementedId() -> Int {
+    static func incrementedId() -> Int {
         guard
             let realm = try? RealmSwift.Realm(),
             let max = realm.objects(Self.self).sorted(byKeyPath: "id", ascending: false).first
@@ -66,6 +71,19 @@ extension RealmIncrementableIdentifiedObject where Self: RealmSwift.Object {
                 return 1
         }
         return max.id + 1
+    }
+}
+
+extension RealmSortableObject where Self: RealmSwift.Object {
+    
+    static func nextSortNumber() -> Int {
+        guard
+            let realm = try? RealmSwift.Realm(),
+            let max = realm.objects(Self.self).sorted(byKeyPath: "sort", ascending: false).first
+            else {
+                return 1
+        }
+        return max.sort + 1
     }
 }
 
