@@ -13,10 +13,6 @@ class BookInteractorOutputMock: BookInteractorOutput {
         self.interactor.output = self
     }
     
-    func created(newBook: Book) {
-        print(newBook)
-    }
-    
     func loaded(books: [Book]) {
         print(books)
     }
