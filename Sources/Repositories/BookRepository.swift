@@ -9,7 +9,7 @@ protocol BookInteractorInput: class {
     var output: BookInteractorOutput! { get set }
     
     func load()
-    func create()
+    func addNewBook()
     func add(book: Book)
     func update(book: Book)
     func delete(book: Book)
@@ -17,7 +17,6 @@ protocol BookInteractorInput: class {
 
 protocol BookInteractorOutput: class {
     
-    func created(newBook: Book)
     func loaded(books: [Book])
 }
 
@@ -25,24 +24,34 @@ class BookRepository: BookInteractorInput {
     
     weak var output: BookInteractorOutput!
     
-    func load() {
+    private func loadBooks() -> [Book] {
         let realmObjects = Realm
             .select(from: DBBook.self, predicate: nil)
             .sorted(byKeyPath: "sort", ascending: true)
             .array
-        let books = BookTranslator().translate(realmObjects)
+        return BookTranslator().translate(realmObjects)
+    }
+    
+    private func createBook() -> Book {
+        let book = BookTranslator().translate(DBBook())
+        book.id = DBBook.generateId()
+        book.name = "新しい作品"
+        book.sort = DBBook.nextSortNumber()
+        return book
+    }
+    
+    func load() {
+        let books = loadBooks()
         output.loaded(books: books)
     }
     
-    func create() {
-        let book = BookTranslator().translate(DBBook())
-        book.id = ""
-        book.name = "新しい作品"
-        output.created(newBook: book)
+    func addNewBook() {
+        add(book: createBook())
     }
     
     func add(book: Book) {
-        
+        let object = BookTranslator().detranslate(book)
+        Realm.insert(object)
     }
     
     func update(book: Book) {

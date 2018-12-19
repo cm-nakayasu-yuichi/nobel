@@ -29,7 +29,10 @@ class BootstrapViewController: UITableViewController {
             }),
             (title: "作成", handler: { _ in
                 let mock = BookInteractorOutputMock()
-                mock.interactor.create()
+                mock.interactor.addNewBook()
+            }),
+            (title: "ID作成", handler: { _ in
+                print(DBBook.generateId())
             }),
             ]),
         ]

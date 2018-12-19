@@ -5,7 +5,7 @@
 import Foundation
 import RealmSwift
 
-class DBBook: RealmSwift.Object, RealmIdentifiedObject {
+class DBBook: RealmSwift.Object, RealmIdentifiedObject, RealmSortableObject {
     @objc dynamic var id = ""
     @objc dynamic var name = ""
     @objc dynamic var author = ""
