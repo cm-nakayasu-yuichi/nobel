@@ -103,6 +103,8 @@
 		E4A6DC6D21C8BF9E00562935 /* SentenceInteractorOutputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DC6A21C8BF9E00562935 /* SentenceInteractorOutputMock.swift */; };
 		E4A6DC6E21C8BF9E00562935 /* ChapterInteractorOutputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DC6B21C8BF9E00562935 /* ChapterInteractorOutputMock.swift */; };
 		E4A6DC6F21C8BF9E00562935 /* BookInteractorOutputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DC6C21C8BF9E00562935 /* BookInteractorOutputMock.swift */; };
+		E4A6DC9321CB359A00562935 /* RealmSortableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DC9221CB359A00562935 /* RealmSortableObject.swift */; };
+		E4A6DC9521CB36AF00562935 /* RealmIncrementableIdentifiedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DC9421CB36AF00562935 /* RealmIncrementableIdentifiedObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -220,6 +222,8 @@
 		E4A6DC6A21C8BF9E00562935 /* SentenceInteractorOutputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceInteractorOutputMock.swift; sourceTree = "<group>"; };
 		E4A6DC6B21C8BF9E00562935 /* ChapterInteractorOutputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterInteractorOutputMock.swift; sourceTree = "<group>"; };
 		E4A6DC6C21C8BF9E00562935 /* BookInteractorOutputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookInteractorOutputMock.swift; sourceTree = "<group>"; };
+		E4A6DC9221CB359A00562935 /* RealmSortableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmSortableObject.swift; sourceTree = "<group>"; };
+		E4A6DC9421CB36AF00562935 /* RealmIncrementableIdentifiedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmIncrementableIdentifiedObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,6 +351,8 @@
 				E4A6DAB221C81BA400562935 /* Realm.swift */,
 				E4A6DAB321C81BA400562935 /* RealmSwift+App.swift */,
 				E4A6DAB421C81BA400562935 /* RealmIdentifiedObject.swift */,
+				E4A6DC9421CB36AF00562935 /* RealmIncrementableIdentifiedObject.swift */,
+				E4A6DC9221CB359A00562935 /* RealmSortableObject.swift */,
 				E4A6DAB521C81BA400562935 /* NSPredicate+Realm.swift */,
 			);
 			path = Realm;
@@ -790,6 +796,7 @@
 				E4A6DBD621C81BA500562935 /* Notification+App.swift in Sources */,
 				E4A6DBD121C81BA500562935 /* Codable+App.swift in Sources */,
 				E4A6DC4D21C81E1E00562935 /* KeyboardManager.swift in Sources */,
+				E4A6DC9321CB359A00562935 /* RealmSortableObject.swift in Sources */,
 				E4A6DC2721C81BA500562935 /* Translator.swift in Sources */,
 				E4A6DBD521C81BA500562935 /* Date+App.swift in Sources */,
 				E4A6DB9221C81BA500562935 /* TextSize.swift in Sources */,
@@ -823,6 +830,7 @@
 				E4A6DB8F21C81BA500562935 /* WebApiError.swift in Sources */,
 				E4A6DBFE21C81BA500562935 /* LaunchViewController.swift in Sources */,
 				E4A6DC5621C81E1E00562935 /* Dialog.swift in Sources */,
+				E4A6DC9521CB36AF00562935 /* RealmIncrementableIdentifiedObject.swift in Sources */,
 				E4A6DBD421C81BA500562935 /* UIApplication+App.swift in Sources */,
 				E4A6DC3021C81BA500562935 /* DBBook.swift in Sources */,
 				E4A6DC6421C8B9B600562935 /* ChapterRepository.swift in Sources */,

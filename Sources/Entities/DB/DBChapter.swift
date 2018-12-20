@@ -5,7 +5,7 @@
 import Foundation
 import RealmSwift
 
-class DBChapter: RealmSwift.Object, RealmIdentifiedObject {
+class DBChapter: RealmSwift.Object, RealmIdentifiedObject, RealmSortableObject {
     @objc dynamic var id = ""
     @objc dynamic var name = ""
     @objc dynamic var sort = 0
