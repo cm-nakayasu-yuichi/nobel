@@ -4,23 +4,23 @@
 //
 import Foundation
 
-protocol LaunchInteractorInput: class {
+protocol ChapterInteractorInput: class {
     
-    var output: LaunchInteractorOutput! { get set }
+    var output: ChapterInteractorOutput! { get set }
     
     func requestIsFirstLaunch()
     func requestIsAgreeTerms()
 }
 
-protocol LaunchInteractorOutput: class {
+protocol ChapterInteractorOutput: class {
     
     func responseIsFirstLaunch(_ isFirstLaunch: Bool)
     func responseIsAgreeTerms(_ isAgreeTerms: Bool)
 }
 
-class LaunchRepository: LaunchInteractorInput {
+class ChapterRepository: ChapterInteractorInput {
     
-    weak var output: LaunchInteractorOutput!
+    weak var output: ChapterInteractorOutput!
     
     func requestIsFirstLaunch() {
         let config = AppConfig()

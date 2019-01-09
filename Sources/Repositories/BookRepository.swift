@@ -4,23 +4,23 @@
 //
 import Foundation
 
-protocol LaunchInteractorInput: class {
+protocol BookRepositoryInteractorInput: class {
     
-    var output: LaunchInteractorOutput! { get set }
+    var output: BookRepositoryInteractorOutput! { get set }
     
     func requestIsFirstLaunch()
     func requestIsAgreeTerms()
 }
 
-protocol LaunchInteractorOutput: class {
+protocol BookRepositoryInteractorOutput: class {
     
     func responseIsFirstLaunch(_ isFirstLaunch: Bool)
     func responseIsAgreeTerms(_ isAgreeTerms: Bool)
 }
 
-class LaunchRepository: LaunchInteractorInput {
+class BookRepositoryRepository: BookRepositoryInteractorInput {
     
-    weak var output: LaunchInteractorOutput!
+    weak var output: BookRepositoryInteractorOutput!
     
     func requestIsFirstLaunch() {
         let config = AppConfig()

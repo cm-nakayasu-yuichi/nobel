@@ -4,23 +4,23 @@
 //
 import Foundation
 
-protocol LaunchInteractorInput: class {
+protocol SentenceInteractorInput: class {
     
-    var output: LaunchInteractorOutput! { get set }
+    var output: SentenceInteractorOutput! { get set }
     
     func requestIsFirstLaunch()
     func requestIsAgreeTerms()
 }
 
-protocol LaunchInteractorOutput: class {
+protocol SentenceInteractorOutput: class {
     
     func responseIsFirstLaunch(_ isFirstLaunch: Bool)
     func responseIsAgreeTerms(_ isAgreeTerms: Bool)
 }
 
-class LaunchRepository: LaunchInteractorInput {
+class SentenceRepository: SentenceInteractorInput {
     
-    weak var output: LaunchInteractorOutput!
+    weak var output: SentenceInteractorOutput!
     
     func requestIsFirstLaunch() {
         let config = AppConfig()
