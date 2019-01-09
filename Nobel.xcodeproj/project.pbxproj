@@ -100,6 +100,7 @@
 		E4AD8EED21E5F71300F97B92 /* BookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD8EEA21E5F71200F97B92 /* BookRepository.swift */; };
 		E4AD8EEE21E5F71300F97B92 /* SentenceRepository..swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD8EEB21E5F71300F97B92 /* SentenceRepository..swift */; };
 		E4AD8EEF21E5F71300F97B92 /* ChapterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD8EEC21E5F71300F97B92 /* ChapterRepository.swift */; };
+		E4AD8EF121E5F91100F97B92 /* IdentifierGeneratable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD8EF021E5F91100F97B92 /* IdentifierGeneratable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,6 +215,7 @@
 		E4AD8EEA21E5F71200F97B92 /* BookRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookRepository.swift; sourceTree = "<group>"; };
 		E4AD8EEB21E5F71300F97B92 /* SentenceRepository..swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceRepository..swift; sourceTree = "<group>"; };
 		E4AD8EEC21E5F71300F97B92 /* ChapterRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterRepository.swift; sourceTree = "<group>"; };
+		E4AD8EF021E5F91100F97B92 /* IdentifierGeneratable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierGeneratable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -527,6 +529,7 @@
 				E4A6DB7521C81BA500562935 /* Translator.swift */,
 				E4A6DB7621C81BA500562935 /* Configurable.swift */,
 				E4A6DB7721C81BA500562935 /* Notifiable.swift */,
+				E4AD8EF021E5F91100F97B92 /* IdentifierGeneratable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -811,6 +814,7 @@
 				E4A6DB8C21C81BA500562935 /* WebApiResponse.swift in Sources */,
 				E4A6DBD821C81BA500562935 /* Color+Definition.swift in Sources */,
 				E4A6DB9021C81BA500562935 /* ColorTheme.swift in Sources */,
+				E4AD8EF121E5F91100F97B92 /* IdentifierGeneratable.swift in Sources */,
 				E4A6DB9121C81BA500562935 /* FontType.swift in Sources */,
 				E4A6DC5221C81E1E00562935 /* DialogZoomBehavior.swift in Sources */,
 				E4A6DBCC21C81BA500562935 /* Array+App.swift in Sources */,
