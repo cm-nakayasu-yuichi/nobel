@@ -13,11 +13,13 @@ class ChapterInteractorOutputMock: ChapterInteractorOutput {
         self.interactor.output = self
     }
     
-    func created(newChapter: Chapter) {
-        
+    func loaded(chapters: [Chapter]) {
+        print(chapters)
     }
     
-    func loaded(chapters: [Chapter]) {
-        
+    // for test
+    func createTest() {
+        let book = BookRepository().create()
+        self.interactor.addNewChapter(to: book)
     }
 }

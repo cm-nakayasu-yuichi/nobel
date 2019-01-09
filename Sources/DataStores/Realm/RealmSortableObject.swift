@@ -12,10 +12,10 @@ protocol RealmSortableObject {
 
 extension RealmSortableObject where Self: RealmSwift.Object {
     
-    static func nextSortNumber() -> Int {
+    static func nextSortNumber(predicate: NSPredicate = .empty) -> Int {
         guard
             let realm = try? RealmSwift.Realm(),
-            let max = realm.objects(Self.self).sorted(byKeyPath: "sort", ascending: false).first
+            let max = realm.objects(Self.self).filter(predicate).numberSorted().first
             else {
                 return 1
         }
@@ -25,7 +25,14 @@ extension RealmSortableObject where Self: RealmSwift.Object {
 
 extension RealmSwift.Results where Element: RealmSortableObject {
     
-    func sorted(_ ascending: Bool = true) -> RealmSwift.Results<Element> {
+    func numberSorted(_ ascending: Bool = true) -> RealmSwift.Results<Element> {
+        return sorted(byKeyPath: "sort", ascending: ascending)
+    }
+}
+
+extension RealmSwift.List where Element: RealmSortableObject {
+    
+    func numberSorted(_ ascending: Bool = true) -> RealmSwift.Results<Element> {
         return sorted(byKeyPath: "sort", ascending: ascending)
     }
 }

@@ -44,5 +44,5 @@ class Book {
     var sort: Int!
     
     /// 章リスト
-    var chapters: [Chapter]!
+    var chapters = [Chapter]()
 }

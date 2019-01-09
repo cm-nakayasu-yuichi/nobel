@@ -14,7 +14,6 @@ class SentenceTranslator: MultiTranslator, MultiDetranslator {
         ret.id = input.id
         ret.name = input.name
         ret.sort = input.sort
-        ret.chapter = ChapterTranslator().translate(input.linkingChapter.first!)
         
         return ret
     }

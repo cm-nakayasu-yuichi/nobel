@@ -12,7 +12,7 @@ class DBChapter: RealmSwift.Object, RealmIdentifiedObject, RealmSortableObject {
     
     var sentences = RealmSwift.List<DBSentence>()
     
-    let linkingBook = LinkingObjects(fromType: DBBook.self, property: "chapters")
+    let parentBook = LinkingObjects(fromType: DBBook.self, property: "chapters")
     
     override static func primaryKey() -> String? { return "id" }
 }

@@ -15,7 +15,6 @@ class ChapterTranslator: MultiTranslator, MultiDetranslator {
         ret.name = input.name
         ret.sort = input.sort
         ret.sentences = SentenceTranslator().translate(input.sentences.array)
-        ret.book = BookTranslator().translate(input.linkingBook.first!)
         
         return ret
     }

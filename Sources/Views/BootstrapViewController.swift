@@ -35,6 +35,13 @@ class BootstrapViewController: UITableViewController {
                 print(DBBook.generateId())
             }),
             ]),
+        (section: "章リポジトリテスト",
+         rows: [
+            (title: "作成", handler: { _ in
+                let mock = ChapterInteractorOutputMock()
+                mock.createTest()
+            }),
+            ]),
         ]
     // =========================================================================
     

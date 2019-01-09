@@ -17,5 +17,5 @@ class Sentence {
     var sort: Int!
     
     /// 親となる章
-    weak var chapter: Chapter!
+    weak var chapter: Chapter?
 }

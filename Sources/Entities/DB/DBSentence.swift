@@ -10,7 +10,7 @@ class DBSentence: RealmSwift.Object, RealmIdentifiedObject, RealmSortableObject 
     @objc dynamic var name = ""
     @objc dynamic var sort = 0
     
-    let linkingChapter = LinkingObjects(fromType: DBChapter.self, property: "sentences")
+    let parentChapter = LinkingObjects(fromType: DBChapter.self, property: "sentences")
     
     override static func primaryKey() -> String? { return "id" }
 }

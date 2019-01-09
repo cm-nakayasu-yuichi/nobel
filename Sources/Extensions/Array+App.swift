@@ -174,3 +174,13 @@ extension Array {
         return arr
     }
 }
+
+extension Collection {
+    
+    func apply<T>(_ transform: (Element) throws -> Void) rethrows -> [T] where T == Element {
+        return try map { elememt -> T in
+            try transform(elememt)
+            return elememt
+        }
+    }
+}

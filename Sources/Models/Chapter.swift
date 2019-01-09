@@ -17,8 +17,8 @@ class Chapter {
     var sort: Int!
     
     /// 節(文章)の配列
-    var sentences: [Sentence]!
+    var sentences = [Sentence]()
     
     /// 親となる書籍
-    weak var book: Book!
+    weak var book: Book?
 }
