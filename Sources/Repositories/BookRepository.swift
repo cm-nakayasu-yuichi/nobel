@@ -21,7 +21,7 @@ protocol BookRepositoryInteractorOutput: class {
     func loaded(books: [Book])
 }
 
-class BookRepositoryRepository: BookRepositoryInteractorInput {
+class BookRepositoryRepository: BookRepositoryInteractorInput, IdentifierGeneratable {
     
     weak var output: BookRepositoryInteractorOutput!
     
@@ -30,7 +30,21 @@ class BookRepositoryRepository: BookRepositoryInteractorInput {
     }
     
     func create() {
+        let book = Book()
+        book.id = generateId()
+        book.title = "新しい書籍"
+        book.author = "" // TODO: アプリ設定から取得
+        book.outlineTitle = ""
+        book.outline = ""
+        book.bookmarkedChapterIndex = 0
+        book.bookmarkedPageIndex = 0
+        book.isLocked = false
+        book.colorTheme = ColorTheme.standard
+        book.textSize = TextSize.standard
+        book.fontType = FontType.standard
+        book.chapters = []
         
+        output.created(newBook: book)
     }
     
     func add(book: Book) {

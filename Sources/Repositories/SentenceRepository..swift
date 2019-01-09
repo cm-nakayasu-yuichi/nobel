@@ -9,7 +9,7 @@ protocol SentenceInteractorInput: class {
     var output: SentenceInteractorOutput! { get set }
     
     func load(of chapter: Chapter)
-    func create()
+    func create(of chapter: Chapter?)
     func add(sentence: Sentence)
     func update(sentence: Sentence)
     func delete(sentence: Sentence)
@@ -21,7 +21,7 @@ protocol SentenceInteractorOutput: class {
     func loaded(sentences: [Sentence])
 }
 
-class SentenceRepository: SentenceInteractorInput {
+class SentenceRepository: SentenceInteractorInput, IdentifierGeneratable {
     
     weak var output: SentenceInteractorOutput!
     
@@ -29,8 +29,12 @@ class SentenceRepository: SentenceInteractorInput {
         
     }
     
-    func create() {
-        
+    func create(of chapter: Chapter?) {
+        let sentence = Sentence()
+        sentence.id = generateId()
+        sentence.title = "新しい文章"
+        sentence.chapter = chapter
+        output.created(newSentence: sentence)
     }
     
     func add(sentence: Sentence) {
