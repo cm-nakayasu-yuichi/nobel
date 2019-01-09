@@ -72,9 +72,9 @@
 		E4A6DC2721C81BA500562935 /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB7521C81BA500562935 /* Translator.swift */; };
 		E4A6DC2821C81BA500562935 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB7621C81BA500562935 /* Configurable.swift */; };
 		E4A6DC2921C81BA500562935 /* Notifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB7721C81BA500562935 /* Notifiable.swift */; };
-		E4A6DC2C21C81BA500562935 /* DBChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB7C21C81BA500562935 /* DBChapter.swift */; };
-		E4A6DC3021C81BA500562935 /* DBBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB8021C81BA500562935 /* DBBook.swift */; };
-		E4A6DC3121C81BA500562935 /* DBSentence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB8121C81BA500562935 /* DBSentence.swift */; };
+		E4A6DC2C21C81BA500562935 /* ChapterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB7C21C81BA500562935 /* ChapterEntity.swift */; };
+		E4A6DC3021C81BA500562935 /* BookEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB8021C81BA500562935 /* BookEntity.swift */; };
+		E4A6DC3121C81BA500562935 /* SentenceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB8121C81BA500562935 /* SentenceEntity.swift */; };
 		E4A6DC3521C81BA500562935 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB8521C81BA500562935 /* AppConfig.swift */; };
 		E4A6DC4C21C81E1E00562935 /* Appearances.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DC3621C81E1D00562935 /* Appearances.swift */; };
 		E4A6DC4D21C81E1E00562935 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DC3721C81E1D00562935 /* KeyboardManager.swift */; };
@@ -181,9 +181,9 @@
 		E4A6DB7521C81BA500562935 /* Translator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
 		E4A6DB7621C81BA500562935 /* Configurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		E4A6DB7721C81BA500562935 /* Notifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifiable.swift; sourceTree = "<group>"; };
-		E4A6DB7C21C81BA500562935 /* DBChapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBChapter.swift; sourceTree = "<group>"; };
-		E4A6DB8021C81BA500562935 /* DBBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBBook.swift; sourceTree = "<group>"; };
-		E4A6DB8121C81BA500562935 /* DBSentence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBSentence.swift; sourceTree = "<group>"; };
+		E4A6DB7C21C81BA500562935 /* ChapterEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterEntity.swift; sourceTree = "<group>"; };
+		E4A6DB8021C81BA500562935 /* BookEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookEntity.swift; sourceTree = "<group>"; };
+		E4A6DB8121C81BA500562935 /* SentenceEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceEntity.swift; sourceTree = "<group>"; };
 		E4A6DB8521C81BA500562935 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		E4A6DC3621C81E1D00562935 /* Appearances.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearances.swift; sourceTree = "<group>"; };
 		E4A6DC3721C81E1D00562935 /* KeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
@@ -519,20 +519,12 @@
 		E4A6DB7821C81BA500562935 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				E4A6DB7A21C81BA500562935 /* DB */,
+				E4A6DB8021C81BA500562935 /* BookEntity.swift */,
+				E4A6DB7C21C81BA500562935 /* ChapterEntity.swift */,
+				E4A6DB8121C81BA500562935 /* SentenceEntity.swift */,
 				E4A6DB8521C81BA500562935 /* AppConfig.swift */,
 			);
 			path = Entities;
-			sourceTree = "<group>";
-		};
-		E4A6DB7A21C81BA500562935 /* DB */ = {
-			isa = PBXGroup;
-			children = (
-				E4A6DB8021C81BA500562935 /* DBBook.swift */,
-				E4A6DB7C21C81BA500562935 /* DBChapter.swift */,
-				E4A6DB8121C81BA500562935 /* DBSentence.swift */,
-			);
-			path = DB;
 			sourceTree = "<group>";
 		};
 		E4A6DC3821C81E1D00562935 /* Dialog */ = {
@@ -763,7 +755,7 @@
 				E4A6DC5E21C81E1E00562935 /* ApplicationLifeCycle.swift in Sources */,
 				E4A6DBD721C81BA500562935 /* UITextField+App.swift in Sources */,
 				E4A6DBE121C81BA500562935 /* ClearButton.swift in Sources */,
-				E4A6DC3121C81BA500562935 /* DBSentence.swift in Sources */,
+				E4A6DC3121C81BA500562935 /* SentenceEntity.swift in Sources */,
 				E4A6DBEE21C81BA500562935 /* TestViewController.swift in Sources */,
 				E4A6DB8B21C81BA500562935 /* WebApiAccessor.swift in Sources */,
 				E4A6DC5921C81E1E00562935 /* ChromeActivity.swift in Sources */,
@@ -790,7 +782,7 @@
 				E4A6DBFE21C81BA500562935 /* LaunchViewController.swift in Sources */,
 				E4A6DC5621C81E1E00562935 /* Dialog.swift in Sources */,
 				E4A6DBD421C81BA500562935 /* UIApplication+App.swift in Sources */,
-				E4A6DC3021C81BA500562935 /* DBBook.swift in Sources */,
+				E4A6DC3021C81BA500562935 /* BookEntity.swift in Sources */,
 				E4A6DBDD21C81BA500562935 /* Builder.swift in Sources */,
 				E4A6DC0921C81BA500562935 /* BootstrapViewController.swift in Sources */,
 				E4A6DBE021C81BA500562935 /* Application.swift in Sources */,
@@ -807,7 +799,7 @@
 				E4A6DBE221C81BA500562935 /* Button.swift in Sources */,
 				E4A6DBDC21C81BA500562935 /* PushNotification.swift in Sources */,
 				E4A6DC3521C81BA500562935 /* AppConfig.swift in Sources */,
-				E4A6DC2C21C81BA500562935 /* DBChapter.swift in Sources */,
+				E4A6DC2C21C81BA500562935 /* ChapterEntity.swift in Sources */,
 				E4A6DC4C21C81E1E00562935 /* Appearances.swift in Sources */,
 				E4A6DC5C21C81E1E00562935 /* Timer.swift in Sources */,
 				E4A6DBD021C81BA500562935 /* UIControl+App.swift in Sources */,
