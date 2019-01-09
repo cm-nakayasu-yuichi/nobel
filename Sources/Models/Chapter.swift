@@ -16,5 +16,5 @@ class Chapter {
     var sentences: [Sentence]!
     
     /// 親となる書籍
-    weak var book: Book!
+    weak var book: Book?
 }

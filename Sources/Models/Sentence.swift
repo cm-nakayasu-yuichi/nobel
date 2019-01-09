@@ -13,5 +13,5 @@ class Sentence {
     var title: String!
     
     /// 親となる章
-    weak var chapter: Chapter!
+    weak var chapter: Chapter?
 }

@@ -3,31 +3,24 @@
 //  Copyright (c) Yuichi Nakayasu. All rights reserved.
 //
 import Foundation
-/*
-class CalendarSettingTranslator: Translator {
-    typealias Input = CalendarSetting
-    typealias Output = CalendarSettingModel
+
+class SentenceTranslator: MultiTranslator, MultiDetranslator {
+    typealias Input = SentenceEntity
+    typealias Output = Sentence
     
-    func translate(_ input: CalendarSetting) -> CalendarSettingModel {
-        let model = CalendarSettingModel()
-        let def = loadDefaultEntity()
-        model.themes = translateThemes(input, default: def)
-        return model
+    func translate(_ input: SentenceEntity) -> Sentence {
+        let ret = Sentence()
+        
+        ret.id = input.id
+        ret.title = input.title
+        
+        return ret
     }
     
-    private func translateThemes(_ input: CalendarSetting, default def: CalendarSetting) -> CalendarSettingModel.Themes {
-        let themes = CalendarSettingModel.Themes()
-        themes.event = CalendarThemeModel(entity: input.eventTheme ?? def.eventTheme!)
-        
-        
-        return themes
-    }
-    
-    private func loadDefaultEntity() -> CalendarSetting {
-        return Json().decode(
-            path: File.defaultCalendarSetting.path,
-            to: CalendarSetting.self
-        )!
+    func detranslate(_ output: Sentence) -> SentenceEntity {
+        return SentenceEntity(
+            id: output.id,
+            title: output.title
+        )
     }
 }
-*/
