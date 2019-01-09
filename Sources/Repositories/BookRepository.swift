@@ -8,30 +8,40 @@ protocol BookRepositoryInteractorInput: class {
     
     var output: BookRepositoryInteractorOutput! { get set }
     
-    func requestIsFirstLaunch()
-    func requestIsAgreeTerms()
+    func load()
+    func create()
+    func add(book: Book)
+    func update(book: Book)
+    func delete(book: Book)
 }
 
 protocol BookRepositoryInteractorOutput: class {
     
-    func responseIsFirstLaunch(_ isFirstLaunch: Bool)
-    func responseIsAgreeTerms(_ isAgreeTerms: Bool)
+    func created(newBook: Book)
+    func loaded(books: [Book])
 }
 
 class BookRepositoryRepository: BookRepositoryInteractorInput {
     
     weak var output: BookRepositoryInteractorOutput!
     
-    func requestIsFirstLaunch() {
-        let config = AppConfig()
-        let isFirstLaunch = config.isFirstLaunch
-        if !isFirstLaunch {
-            config.isFirstLaunch = true
-        }
-        output.responseIsFirstLaunch(isFirstLaunch)
+    func load() {
+        
     }
     
-    func requestIsAgreeTerms() {
-        output.responseIsFirstLaunch(AppConfig().isAgreeTerms)
+    func create() {
+        
+    }
+    
+    func add(book: Book) {
+        
+    }
+    
+    func update(book: Book) {
+        
+    }
+    
+    func delete(book: Book) {
+        
     }
 }

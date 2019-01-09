@@ -8,30 +8,41 @@ protocol ChapterInteractorInput: class {
     
     var output: ChapterInteractorOutput! { get set }
     
-    func requestIsFirstLaunch()
-    func requestIsAgreeTerms()
+    func load(of book: Book)
+    func create()
+    func add(chapter: Chapter)
+    func update(chapter: Chapter)
+    func delete(chapter: Chapter)
 }
 
 protocol ChapterInteractorOutput: class {
     
-    func responseIsFirstLaunch(_ isFirstLaunch: Bool)
-    func responseIsAgreeTerms(_ isAgreeTerms: Bool)
+    func created(newChapter: Chapter)
+    func loaded(chapters: [Chapter])
 }
 
 class ChapterRepository: ChapterInteractorInput {
     
     weak var output: ChapterInteractorOutput!
     
-    func requestIsFirstLaunch() {
-        let config = AppConfig()
-        let isFirstLaunch = config.isFirstLaunch
-        if !isFirstLaunch {
-            config.isFirstLaunch = true
-        }
-        output.responseIsFirstLaunch(isFirstLaunch)
+    func load(of book: Book) {
+        
     }
     
-    func requestIsAgreeTerms() {
-        output.responseIsFirstLaunch(AppConfig().isAgreeTerms)
+    func create() {
+        
     }
+    
+    func add(chapter: Chapter) {
+        
+    }
+    
+    func update(chapter: Chapter) {
+        
+    }
+    
+    func delete(chapter: Chapter) {
+        
+    }
+
 }

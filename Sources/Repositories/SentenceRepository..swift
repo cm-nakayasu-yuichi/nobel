@@ -8,30 +8,40 @@ protocol SentenceInteractorInput: class {
     
     var output: SentenceInteractorOutput! { get set }
     
-    func requestIsFirstLaunch()
-    func requestIsAgreeTerms()
+    func load(of chapter: Chapter)
+    func create()
+    func add(sentence: Sentence)
+    func update(sentence: Sentence)
+    func delete(sentence: Sentence)
 }
 
 protocol SentenceInteractorOutput: class {
     
-    func responseIsFirstLaunch(_ isFirstLaunch: Bool)
-    func responseIsAgreeTerms(_ isAgreeTerms: Bool)
+    func created(newSentence: Sentence)
+    func loaded(sentences: [Sentence])
 }
 
 class SentenceRepository: SentenceInteractorInput {
     
     weak var output: SentenceInteractorOutput!
     
-    func requestIsFirstLaunch() {
-        let config = AppConfig()
-        let isFirstLaunch = config.isFirstLaunch
-        if !isFirstLaunch {
-            config.isFirstLaunch = true
-        }
-        output.responseIsFirstLaunch(isFirstLaunch)
+    func load(of chapter: Chapter) {
+        
     }
     
-    func requestIsAgreeTerms() {
-        output.responseIsFirstLaunch(AppConfig().isAgreeTerms)
+    func create() {
+        
+    }
+    
+    func add(sentence: Sentence) {
+        
+    }
+    
+    func update(sentence: Sentence) {
+        
+    }
+    
+    func delete(sentence: Sentence) {
+        
     }
 }
