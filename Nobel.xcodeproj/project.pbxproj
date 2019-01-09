@@ -30,7 +30,6 @@
 		E4A6DBA821C81BA500562935 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DAD921C81BA400562935 /* Book.swift */; };
 		E4A6DBA921C81BA500562935 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DADA21C81BA400562935 /* Chapter.swift */; };
 		E4A6DBAA21C81BA500562935 /* Sentence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DADB21C81BA400562935 /* Sentence.swift */; };
-		E4A6DBBB21C81BA500562935 /* CalendarSettingTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DAED21C81BA400562935 /* CalendarSettingTranslator.swift */; };
 		E4A6DBBD21C81BA500562935 /* LaunchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DAF021C81BA400562935 /* LaunchPresenter.swift */; };
 		E4A6DBC621C81BA500562935 /* UIColor+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DAFA21C81BA400562935 /* UIColor+App.swift */; };
 		E4A6DBC721C81BA500562935 /* String+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DAFB21C81BA400562935 /* String+App.swift */; };
@@ -95,6 +94,9 @@
 		E4A6DC5C21C81E1E00562935 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DC4921C81E1E00562935 /* Timer.swift */; };
 		E4A6DC5D21C81E1E00562935 /* WireframeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DC4A21C81E1E00562935 /* WireframeHelper.swift */; };
 		E4A6DC5E21C81E1E00562935 /* ApplicationLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DC4B21C81E1E00562935 /* ApplicationLifeCycle.swift */; };
+		E4AD8EE521E5F14700F97B92 /* SentenceTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD8EE421E5F14700F97B92 /* SentenceTranslator.swift */; };
+		E4AD8EE821E5F14E00F97B92 /* ChapterTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD8EE621E5F14E00F97B92 /* ChapterTranslator.swift */; };
+		E4AD8EE921E5F14E00F97B92 /* BookTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD8EE721E5F14E00F97B92 /* BookTranslator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,7 +141,6 @@
 		E4A6DAD921C81BA400562935 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		E4A6DADA21C81BA400562935 /* Chapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
 		E4A6DADB21C81BA400562935 /* Sentence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sentence.swift; sourceTree = "<group>"; };
-		E4A6DAED21C81BA400562935 /* CalendarSettingTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarSettingTranslator.swift; sourceTree = "<group>"; };
 		E4A6DAF021C81BA400562935 /* LaunchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchPresenter.swift; sourceTree = "<group>"; };
 		E4A6DAFA21C81BA400562935 /* UIColor+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+App.swift"; sourceTree = "<group>"; };
 		E4A6DAFB21C81BA400562935 /* String+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+App.swift"; sourceTree = "<group>"; };
@@ -204,6 +205,9 @@
 		E4A6DC4921C81E1E00562935 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		E4A6DC4A21C81E1E00562935 /* WireframeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WireframeHelper.swift; sourceTree = "<group>"; };
 		E4A6DC4B21C81E1E00562935 /* ApplicationLifeCycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationLifeCycle.swift; sourceTree = "<group>"; };
+		E4AD8EE421E5F14700F97B92 /* SentenceTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceTranslator.swift; sourceTree = "<group>"; };
+		E4AD8EE621E5F14E00F97B92 /* ChapterTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTranslator.swift; sourceTree = "<group>"; };
+		E4AD8EE721E5F14E00F97B92 /* BookTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTranslator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -396,7 +400,9 @@
 		E4A6DAE521C81BA400562935 /* Translator */ = {
 			isa = PBXGroup;
 			children = (
-				E4A6DAED21C81BA400562935 /* CalendarSettingTranslator.swift */,
+				E4AD8EE721E5F14E00F97B92 /* BookTranslator.swift */,
+				E4AD8EE621E5F14E00F97B92 /* ChapterTranslator.swift */,
+				E4AD8EE421E5F14700F97B92 /* SentenceTranslator.swift */,
 			);
 			path = Translator;
 			sourceTree = "<group>";
@@ -784,6 +790,7 @@
 				E4A6DBD421C81BA500562935 /* UIApplication+App.swift in Sources */,
 				E4A6DC3021C81BA500562935 /* BookEntity.swift in Sources */,
 				E4A6DBDD21C81BA500562935 /* Builder.swift in Sources */,
+				E4AD8EE821E5F14E00F97B92 /* ChapterTranslator.swift in Sources */,
 				E4A6DC0921C81BA500562935 /* BootstrapViewController.swift in Sources */,
 				E4A6DBE021C81BA500562935 /* Application.swift in Sources */,
 				E4A6DC2621C81BA500562935 /* Anchorable.swift in Sources */,
@@ -808,15 +815,16 @@
 				E4A6DBD921C81BA500562935 /* Dimansions+Definition.swift in Sources */,
 				E4A6DB8821C81BA500562935 /* RealmSwift+App.swift in Sources */,
 				E4A6DBCB21C81BA500562935 /* Number+App.swift in Sources */,
+				E4AD8EE521E5F14700F97B92 /* SentenceTranslator.swift in Sources */,
 				E4A6DC5421C81E1E00562935 /* DialogRiseupBehavior.swift in Sources */,
 				E4A6DB8921C81BA500562935 /* RealmIdentifiedObject.swift in Sources */,
 				E4A6DBCA21C81BA500562935 /* IndexPath+App.swift in Sources */,
 				E4A6DBC821C81BA500562935 /* CoreGraphics+App.swift in Sources */,
 				E4A6DBCF21C81BA500562935 /* Date+Conversion .swift in Sources */,
 				E4A6DB8D21C81BA500562935 /* WebApiRequest.swift in Sources */,
+				E4AD8EE921E5F14E00F97B92 /* BookTranslator.swift in Sources */,
 				E4A6DC4E21C81E1E00562935 /* DialogRightDrawBehavior.swift in Sources */,
 				E4A6DC2821C81BA500562935 /* Configurable.swift in Sources */,
-				E4A6DBBB21C81BA500562935 /* CalendarSettingTranslator.swift in Sources */,
 				E4A6DC5321C81E1E00562935 /* DialogBottomDrawBehavior.swift in Sources */,
 				E4A6DBDB21C81BA500562935 /* File+Definition.swift in Sources */,
 				E4A6DC5121C81E1E00562935 /* DialogTopDrawBehavior.swift in Sources */,
