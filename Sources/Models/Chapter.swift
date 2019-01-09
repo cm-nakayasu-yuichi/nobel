@@ -6,12 +6,15 @@ import UIKit
 
 class Chapter {
     
-    /// 章の名前
-    var name = "第一章 新しい章"
+    /// ID
+    var id: String!
+    
+    /// 章のタイトル
+    var title: String!
     
     /// 節(文章)の配列
-    var sentences = [Sentence]()
+    var sentences: [Sentence]!
     
     /// 親となる書籍
-    weak var parentBook: Book!
+    weak var book: Book!
 }

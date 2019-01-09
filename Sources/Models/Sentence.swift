@@ -5,12 +5,13 @@
 import Foundation
 
 class Sentence {
+        
     /// ID
-    var id = ""
+    var id: String!
     
-    /// 節(文章)名
-    var name = "第一幕 新しい文章"
+    /// 節(文章)のタイトル
+    var title: String!
     
     /// 親となる章
-    weak var parentChapter: Chapter!
+    weak var chapter: Chapter!
 }
