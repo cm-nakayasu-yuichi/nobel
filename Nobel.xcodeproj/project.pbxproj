@@ -97,6 +97,9 @@
 		E4AD8EE521E5F14700F97B92 /* SentenceTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD8EE421E5F14700F97B92 /* SentenceTranslator.swift */; };
 		E4AD8EE821E5F14E00F97B92 /* ChapterTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD8EE621E5F14E00F97B92 /* ChapterTranslator.swift */; };
 		E4AD8EE921E5F14E00F97B92 /* BookTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD8EE721E5F14E00F97B92 /* BookTranslator.swift */; };
+		E4AD8EED21E5F71300F97B92 /* BookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD8EEA21E5F71200F97B92 /* BookRepository.swift */; };
+		E4AD8EEE21E5F71300F97B92 /* SentenceRepository..swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD8EEB21E5F71300F97B92 /* SentenceRepository..swift */; };
+		E4AD8EEF21E5F71300F97B92 /* ChapterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD8EEC21E5F71300F97B92 /* ChapterRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,6 +211,9 @@
 		E4AD8EE421E5F14700F97B92 /* SentenceTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceTranslator.swift; sourceTree = "<group>"; };
 		E4AD8EE621E5F14E00F97B92 /* ChapterTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTranslator.swift; sourceTree = "<group>"; };
 		E4AD8EE721E5F14E00F97B92 /* BookTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTranslator.swift; sourceTree = "<group>"; };
+		E4AD8EEA21E5F71200F97B92 /* BookRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookRepository.swift; sourceTree = "<group>"; };
+		E4AD8EEB21E5F71300F97B92 /* SentenceRepository..swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceRepository..swift; sourceTree = "<group>"; };
+		E4AD8EEC21E5F71300F97B92 /* ChapterRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -382,6 +388,9 @@
 		E4A6DACC21C81BA400562935 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				E4AD8EEA21E5F71200F97B92 /* BookRepository.swift */,
+				E4AD8EEC21E5F71300F97B92 /* ChapterRepository.swift */,
+				E4AD8EEB21E5F71300F97B92 /* SentenceRepository..swift */,
 				E4A6DAD521C81BA400562935 /* LaunchRepository.swift */,
 			);
 			path = Repositories;
@@ -756,6 +765,7 @@
 				E4A6DBD121C81BA500562935 /* Codable+App.swift in Sources */,
 				E4A6DC4D21C81E1E00562935 /* KeyboardManager.swift in Sources */,
 				E4A6DC2721C81BA500562935 /* Translator.swift in Sources */,
+				E4AD8EED21E5F71300F97B92 /* BookRepository.swift in Sources */,
 				E4A6DBD521C81BA500562935 /* Date+App.swift in Sources */,
 				E4A6DB9221C81BA500562935 /* TextSize.swift in Sources */,
 				E4A6DC5E21C81E1E00562935 /* ApplicationLifeCycle.swift in Sources */,
@@ -796,6 +806,7 @@
 				E4A6DC2621C81BA500562935 /* Anchorable.swift in Sources */,
 				E4A6DBC721C81BA500562935 /* String+App.swift in Sources */,
 				E4A6DBA821C81BA500562935 /* Book.swift in Sources */,
+				E4AD8EEF21E5F71300F97B92 /* ChapterRepository.swift in Sources */,
 				E4A6DBC621C81BA500562935 /* UIColor+App.swift in Sources */,
 				E4A6DB8C21C81BA500562935 /* WebApiResponse.swift in Sources */,
 				E4A6DBD821C81BA500562935 /* Color+Definition.swift in Sources */,
@@ -815,6 +826,7 @@
 				E4A6DBD921C81BA500562935 /* Dimansions+Definition.swift in Sources */,
 				E4A6DB8821C81BA500562935 /* RealmSwift+App.swift in Sources */,
 				E4A6DBCB21C81BA500562935 /* Number+App.swift in Sources */,
+				E4AD8EEE21E5F71300F97B92 /* SentenceRepository..swift in Sources */,
 				E4AD8EE521E5F14700F97B92 /* SentenceTranslator.swift in Sources */,
 				E4A6DC5421C81E1E00562935 /* DialogRiseupBehavior.swift in Sources */,
 				E4A6DB8921C81BA500562935 /* RealmIdentifiedObject.swift in Sources */,
