@@ -21,7 +21,7 @@ protocol ChapterInteractorOutput: class {
     func loaded(chapters: [Chapter])
 }
 
-class ChapterRepository: ChapterInteractorInput, IdentifierGeneratable {
+class ChapterRepository: ChapterInteractorInput {
     
     weak var output: ChapterInteractorOutput!
     
@@ -30,10 +30,7 @@ class ChapterRepository: ChapterInteractorInput, IdentifierGeneratable {
     }
     
     func create(of book: Book?) {
-        let chapter = Chapter()
-        chapter.id = generateId()
-        chapter.title = "新しい章"
-        chapter.book = book
+        let chapter = createNewChapter(of: book)
         output.created(newChapter: chapter)
     }
     
@@ -48,5 +45,15 @@ class ChapterRepository: ChapterInteractorInput, IdentifierGeneratable {
     func delete(chapter: Chapter) {
         
     }
+}
 
+extension ChapterRepository: IdentifierGeneratable {
+    
+    private func createNewChapter(of book: Book?) -> Chapter {
+        let chapter = Chapter()
+        chapter.id = generateId()
+        chapter.title = "新しい章"
+        chapter.book = book
+        return chapter
+    }
 }

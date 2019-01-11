@@ -21,7 +21,7 @@ protocol SentenceInteractorOutput: class {
     func loaded(sentences: [Sentence])
 }
 
-class SentenceRepository: SentenceInteractorInput, IdentifierGeneratable {
+class SentenceRepository: SentenceInteractorInput {
     
     weak var output: SentenceInteractorOutput!
     
@@ -30,10 +30,7 @@ class SentenceRepository: SentenceInteractorInput, IdentifierGeneratable {
     }
     
     func create(of chapter: Chapter?) {
-        let sentence = Sentence()
-        sentence.id = generateId()
-        sentence.title = "新しい文章"
-        sentence.chapter = chapter
+        let sentence = createNewSentence(of: chapter)
         output.created(newSentence: sentence)
     }
     
@@ -47,5 +44,16 @@ class SentenceRepository: SentenceInteractorInput, IdentifierGeneratable {
     
     func delete(sentence: Sentence) {
         
+    }
+}
+
+extension SentenceRepository: IdentifierGeneratable {
+    
+    private func createNewSentence(of chapter: Chapter?) -> Sentence {
+        let sentence = Sentence()
+        sentence.id = generateId()
+        sentence.title = "新しい文章"
+        sentence.chapter = chapter
+        return sentence
     }
 }

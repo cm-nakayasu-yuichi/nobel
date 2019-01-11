@@ -10,6 +10,7 @@ protocol BookRepositoryInteractorInput: class {
     
     func load()
     func create()
+    func addNewBook()
     func add(book: Book)
     func update(book: Book)
     func delete(book: Book)
@@ -21,7 +22,7 @@ protocol BookRepositoryInteractorOutput: class {
     func loaded(books: [Book])
 }
 
-class BookRepositoryRepository: BookRepositoryInteractorInput, IdentifierGeneratable {
+class BookRepositoryRepository: BookRepositoryInteractorInput {
     
     weak var output: BookRepositoryInteractorOutput!
     
@@ -30,6 +31,31 @@ class BookRepositoryRepository: BookRepositoryInteractorInput, IdentifierGenerat
     }
     
     func create() {
+        let book = createNewBook()
+        output.created(newBook: book)
+    }
+    
+    func addNewBook() {
+        let book = createNewBook()
+        add(book: book)
+    }
+    
+    func add(book: Book) {
+        
+    }
+    
+    func update(book: Book) {
+        
+    }
+    
+    func delete(book: Book) {
+        
+    }
+}
+
+extension BookRepositoryRepository: IdentifierGeneratable {
+    
+    private func createNewBook() -> Book {
         let book = Book()
         book.id = generateId()
         book.title = "新しい書籍"
@@ -43,19 +69,6 @@ class BookRepositoryRepository: BookRepositoryInteractorInput, IdentifierGenerat
         book.textSize = TextSize.standard
         book.fontType = FontType.standard
         book.chapters = []
-        
-        output.created(newBook: book)
-    }
-    
-    func add(book: Book) {
-        
-    }
-    
-    func update(book: Book) {
-        
-    }
-    
-    func delete(book: Book) {
-        
+        return book
     }
 }
