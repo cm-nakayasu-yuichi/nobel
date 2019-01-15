@@ -10,6 +10,7 @@
 		14F68B186A04F58EAF53CBEE /* Pods_Nobel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27503D664FC7D973E915F959 /* Pods_Nobel.framework */; };
 		CB63D4A671CAE9EBD74D0FD6 /* Pods_NobelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7D26F1A68026AD6970C202 /* Pods_NobelTests.framework */; };
 		E40004DF21ED96EF00B8AE4F /* BookInteractorOutputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40004DE21ED96EF00B8AE4F /* BookInteractorOutputMock.swift */; };
+		E40004E121EDCF9F00B8AE4F /* ShelfPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40004E021EDCF9F00B8AE4F /* ShelfPresenter.swift */; };
 		E48EC89321C816FB006980AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89121C816FB006980AF /* Main.storyboard */; };
 		E48EC89521C816FB006980AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89421C816FB006980AF /* Assets.xcassets */; };
 		E48EC89821C816FB006980AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89621C816FB006980AF /* LaunchScreen.storyboard */; };
@@ -122,6 +123,7 @@
 		99D911490D0D82A03BDC9BFC /* Pods-NobelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NobelTests/Pods-NobelTests.release.xcconfig"; sourceTree = "<group>"; };
 		E2494F7CE4BD1B65E4D53DA8 /* Pods-NobelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NobelTests/Pods-NobelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E40004DE21ED96EF00B8AE4F /* BookInteractorOutputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookInteractorOutputMock.swift; sourceTree = "<group>"; };
+		E40004E021EDCF9F00B8AE4F /* ShelfPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfPresenter.swift; sourceTree = "<group>"; };
 		E48EC88A21C816FB006980AF /* Nobel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nobel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48EC89221C816FB006980AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E48EC89421C816FB006980AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -434,6 +436,7 @@
 			isa = PBXGroup;
 			children = (
 				E4A6DAF021C81BA400562935 /* LaunchPresenter.swift */,
+				E40004E021EDCF9F00B8AE4F /* ShelfPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -821,6 +824,7 @@
 				E4A6DBE021C81BA500562935 /* Application.swift in Sources */,
 				E4A6DC2621C81BA500562935 /* Anchorable.swift in Sources */,
 				E4A6DBC721C81BA500562935 /* String+App.swift in Sources */,
+				E40004E121EDCF9F00B8AE4F /* ShelfPresenter.swift in Sources */,
 				E4A6DBA821C81BA500562935 /* Book.swift in Sources */,
 				E4AD8EEF21E5F71300F97B92 /* ChapterRepository.swift in Sources */,
 				E4A6DBC621C81BA500562935 /* UIColor+App.swift in Sources */,
