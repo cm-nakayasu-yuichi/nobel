@@ -24,7 +24,7 @@ extension BookInteractorOutputMock: BookInteractorOutput {
         
     }
     
-    func loaded(shelf: [ShelfBook]) {
+    func loaded(shelf: [Book]) {
         
     }
     

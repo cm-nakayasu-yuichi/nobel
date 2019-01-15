@@ -7,7 +7,6 @@ import Foundation
 struct BookEntity: Codable {
     let id: String
     let title: String
-    let chapters: [ChapterEntity]
     let author: String
     let outlineTitle: String
     let outline: String

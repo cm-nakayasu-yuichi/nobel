@@ -22,11 +22,7 @@ class BookTranslator: MultiTranslator, MultiDetranslator {
         ret.colorTheme = ColorTheme(rawValue: input.colorTheme)!
         ret.textSize = TextSize(rawValue: input.textSize)!
         ret.fontType = FontType(rawValue: input.fontType)!
-        
-        ret.chapters = ChapterTranslator().translate(input.chapters).map { (chapter: Chapter) -> Chapter in
-            chapter.book = ret
-            return chapter
-        }
+        ret.chapters = []
         
         return ret
     }
@@ -35,7 +31,6 @@ class BookTranslator: MultiTranslator, MultiDetranslator {
         return BookEntity(
             id: output.id,
             title: output.title,
-            chapters: ChapterTranslator().detranslate(output.chapters),
             author: output.author,
             outlineTitle: output.outlineTitle,
             outline: output.outline,

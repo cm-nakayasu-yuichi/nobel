@@ -10,8 +10,6 @@
 		14F68B186A04F58EAF53CBEE /* Pods_Nobel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27503D664FC7D973E915F959 /* Pods_Nobel.framework */; };
 		CB63D4A671CAE9EBD74D0FD6 /* Pods_NobelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7D26F1A68026AD6970C202 /* Pods_NobelTests.framework */; };
 		E40004DF21ED96EF00B8AE4F /* BookInteractorOutputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40004DE21ED96EF00B8AE4F /* BookInteractorOutputMock.swift */; };
-		E42C859521E8752A00AD648C /* ShelfBookEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42C859421E8752A00AD648C /* ShelfBookEntity.swift */; };
-		E42C859721E8820600AD648C /* ShelfBookTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42C859621E8820600AD648C /* ShelfBookTranslator.swift */; };
 		E48EC89321C816FB006980AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89121C816FB006980AF /* Main.storyboard */; };
 		E48EC89521C816FB006980AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89421C816FB006980AF /* Assets.xcassets */; };
 		E48EC89821C816FB006980AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89621C816FB006980AF /* LaunchScreen.storyboard */; };
@@ -124,8 +122,6 @@
 		99D911490D0D82A03BDC9BFC /* Pods-NobelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NobelTests/Pods-NobelTests.release.xcconfig"; sourceTree = "<group>"; };
 		E2494F7CE4BD1B65E4D53DA8 /* Pods-NobelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NobelTests/Pods-NobelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E40004DE21ED96EF00B8AE4F /* BookInteractorOutputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookInteractorOutputMock.swift; sourceTree = "<group>"; };
-		E42C859421E8752A00AD648C /* ShelfBookEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfBookEntity.swift; sourceTree = "<group>"; };
-		E42C859621E8820600AD648C /* ShelfBookTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfBookTranslator.swift; sourceTree = "<group>"; };
 		E48EC88A21C816FB006980AF /* Nobel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nobel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48EC89221C816FB006980AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E48EC89421C816FB006980AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -427,7 +423,6 @@
 			isa = PBXGroup;
 			children = (
 				E40004DD21ED96EF00B8AE4F /* Mocks */,
-				E42C859621E8820600AD648C /* ShelfBookTranslator.swift */,
 				E4AD8EE721E5F14E00F97B92 /* BookTranslator.swift */,
 				E4AD8EE621E5F14E00F97B92 /* ChapterTranslator.swift */,
 				E4AD8EE421E5F14700F97B92 /* SentenceTranslator.swift */,
@@ -554,7 +549,6 @@
 		E4A6DB7821C81BA500562935 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				E42C859421E8752A00AD648C /* ShelfBookEntity.swift */,
 				E4A6DB8021C81BA500562935 /* BookEntity.swift */,
 				E4A6DB7C21C81BA500562935 /* ChapterEntity.swift */,
 				E4A6DB8121C81BA500562935 /* SentenceEntity.swift */,
@@ -857,10 +851,8 @@
 				E4A6DBC821C81BA500562935 /* CoreGraphics+App.swift in Sources */,
 				E4A6DBCF21C81BA500562935 /* Date+Conversion .swift in Sources */,
 				E4A6DB8D21C81BA500562935 /* WebApiRequest.swift in Sources */,
-				E42C859521E8752A00AD648C /* ShelfBookEntity.swift in Sources */,
 				E4AD8EE921E5F14E00F97B92 /* BookTranslator.swift in Sources */,
 				E4A6DC4E21C81E1E00562935 /* DialogRightDrawBehavior.swift in Sources */,
-				E42C859721E8820600AD648C /* ShelfBookTranslator.swift in Sources */,
 				E4A6DC2821C81BA500562935 /* Configurable.swift in Sources */,
 				E4A6DC5321C81E1E00562935 /* DialogBottomDrawBehavior.swift in Sources */,
 				E4A6DBDB21C81BA500562935 /* File+Definition.swift in Sources */,

@@ -20,7 +20,7 @@ protocol BookInteractorInput: class {
 protocol BookInteractorOutput: class {
     
     func created(newBook: Book)
-    func loaded(shelf: [ShelfBook])
+    func loaded(shelf: [Book])
     func loaded(book: Book)
 }
 
