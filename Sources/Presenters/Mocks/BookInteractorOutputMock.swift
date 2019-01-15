@@ -29,7 +29,7 @@ extension BookInteractorOutputMock: BookInteractorOutput {
     }
     
     func loaded(shelf: [Book]) {
-        
+        print(shelf)
     }
     
     func loaded(book: Book) {

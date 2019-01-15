@@ -29,8 +29,7 @@ class BookRepository: BookInteractorInput {
     weak var output: BookInteractorOutput!
     
     func loadShelf() {
-        let entities = Json().decode(path: shelfFile.path, to: [BookEntity].self) ?? []
-        let models = BookTranslator().translate(entities)
+        let models = loadShelfModels()
         output.loaded(shelf: models)
     }
     
@@ -49,7 +48,11 @@ class BookRepository: BookInteractorInput {
     }
     
     func add(book: Book) {
-        
+        var entities = loadShelfEntities()
+        let entity = BookTranslator().detranslate(book)
+        entities.append(entity)
+        saveShelfEntities(entities)
+        loadShelf()
     }
     
     func update(book: Book) {
@@ -63,12 +66,26 @@ class BookRepository: BookInteractorInput {
 
 extension BookRepository {
     
-    private var shelfFile: File {
+    private var shelfJsonFile: File {
         let file = File.documentDirectory.append(pathComponent: "shelf.json")
         if !file.exists {
             try? file.write(contents: "[]")
         }
         return file
+    }
+    
+    private func saveShelfEntities(_ entities: [BookEntity]) {
+        let encoded = Json().encode(entities)
+        try? shelfJsonFile.write(contents: encoded)
+    }
+    
+    private func loadShelfEntities() -> [BookEntity] {
+        return Json().decode(path: shelfJsonFile.path, to: [BookEntity].self) ?? []
+    }
+    
+    private func loadShelfModels() -> [Book] {
+        let entities = loadShelfEntities()
+        return BookTranslator().translate(entities)
     }
 }
 

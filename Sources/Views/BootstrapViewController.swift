@@ -14,12 +14,22 @@ class BootstrapViewController: UITableViewController {
             (title: "スタート", handler: { bootstrap in
                 //Wireframe.showTodoList(from: bootstrap)
             }),
-            (title: "書棚", handler: { bootstrap in
+            (title: "テスト", handler: { bootstrap in
+                Wireframe.showTest(from: bootstrap)
+            }),
+            ]),
+        (section: "アプリ",
+         rows: [
+            (title: "ファイルパス", handler: { bootstrap in
+                print(File.documentDirectory.path)
+            }),
+            (title: "書棚閲覧", handler: { bootstrap in
                 let mock = BookInteractorOutputMock()
                 mock.shelf()
             }),
-            (title: "テスト", handler: { bootstrap in
-                Wireframe.showTest(from: bootstrap)
+            (title: "書棚追加", handler: { bootstrap in
+                let mock = BookInteractorOutputMock()
+                mock.addBook()
             }),
             ]),
         ]
