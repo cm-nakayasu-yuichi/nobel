@@ -245,6 +245,42 @@ extension File {
 
 extension File {
     
+    /// ロケーション文字列からディレクトリを指定する
+    /// - parameter location: "/"で区切ったディレクトリ以下のパス
+    /// - parameter make: ディレクトリが存在しない場合に作成するかどうか
+    /// - returns: 自身の参照
+    func locate(_ location: String?, makeIfNeeded make: Bool = true) -> File? {
+        if !self.isDirectory {
+            print("could not locate because file object not point to directory. path ='\(self.path)'")
+            return nil
+        }
+        
+        var ret = File(path: path)
+        if (location?.isEmpty ?? true) {
+            return ret
+        }
+        
+        for locationElement in self.locationElements(location) {
+            ret = ret.append(pathComponent: locationElement)
+        }
+        if make && !ret.exists {
+            do {
+                try ret.makeDirectory()
+            } catch {
+                print("failed to make directory during locating. path ='\(path)'")
+                return nil
+            }
+        }
+        return ret
+    }
+    
+    /// "/"で区切った文字列を分割して配列化する
+    /// - parameter makeDirIfNotExists: ディレクトリが存在しない場合作成するかどうか
+    /// - returns: ロケーションで指定したドキュメントディレクトリ内のディレクトリ絶対パス
+    private func locationElements(_ location: String?) -> [String] {
+        guard let location = location else { return [] }
+        return location.components(separatedBy: "/").filter { !$0.isEmpty }
+    }
 }
 
 extension String {

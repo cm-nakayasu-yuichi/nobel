@@ -38,9 +38,7 @@ enum DataType {
     
     /// ファイルオブジェクト
     var file: File? {
-        // TODO:
-        return File.documentDirectory.append(pathComponent: self.fileName)
-//        return File.documentDirectory.locate(self.directoryLocation)?.name(self.fileName)
+        return File.documentDirectory.locate(self.directoryLocation)?.append(pathComponent: self.fileName)
     }
     
     /// プロパティファイルかどうか
@@ -52,9 +50,7 @@ enum DataType {
     var directory: File? {
         switch self {
         case .shelf: return nil
-        // TODO:
-        default: return File.documentDirectory
-//        default: return File.documentDirectory.locate(self.directoryLocation)
+        default: return File.documentDirectory.locate(self.directoryLocation)
         }
     }
 }
