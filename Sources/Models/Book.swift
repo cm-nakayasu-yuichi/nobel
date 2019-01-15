@@ -4,7 +4,7 @@
 //
 import UIKit
 
-class Book {
+class ShelfBook {
     
     /// ID
     var id: String!
@@ -14,6 +14,9 @@ class Book {
     
     /// 作者名
     var author: String!
+}
+
+class Book: ShelfBook {
     
     /// あらすじタイトル
     var outlineTitle: String!

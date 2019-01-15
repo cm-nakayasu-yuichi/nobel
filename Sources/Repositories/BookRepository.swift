@@ -8,7 +8,8 @@ protocol BookRepositoryInteractorInput: class {
     
     var output: BookRepositoryInteractorOutput! { get set }
     
-    func load()
+    func loadShelf()
+    func loadBook(id: String)
     func create()
     func addNewBook()
     func add(book: Book)
@@ -19,14 +20,19 @@ protocol BookRepositoryInteractorInput: class {
 protocol BookRepositoryInteractorOutput: class {
     
     func created(newBook: Book)
-    func loaded(books: [Book])
+    func loaded(shelf: [ShelfBook])
+    func loaded(book: Book)
 }
 
 class BookRepositoryRepository: BookRepositoryInteractorInput {
     
     weak var output: BookRepositoryInteractorOutput!
     
-    func load() {
+    func loadShelf() {
+        
+    }
+    
+    func loadBook(id: String) {
         
     }
     
