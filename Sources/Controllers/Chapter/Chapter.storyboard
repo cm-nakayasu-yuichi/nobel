@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="v5g-11-ygr">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chapter View Controller-->
+        <scene sceneID="Kt3-RC-akb">
+            <objects>
+                <viewController id="v5g-11-ygr" customClass="ChapterViewController" customModule="Nobel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EVh-Ep-Tk1"/>
+                        <viewControllerLayoutGuide type="bottom" id="yDo-3L-uIf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MLN-2F-sRW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Pb8-Js-uk5">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Pb8-Js-uk5" secondAttribute="trailing" id="14h-ey-Ebh"/>
+                            <constraint firstItem="Pb8-Js-uk5" firstAttribute="top" secondItem="EVh-Ep-Tk1" secondAttribute="bottom" id="BXI-kG-csp"/>
+                            <constraint firstItem="Pb8-Js-uk5" firstAttribute="leading" secondItem="MLN-2F-sRW" secondAttribute="leading" id="BtX-Qs-dZZ"/>
+                            <constraint firstItem="yDo-3L-uIf" firstAttribute="top" secondItem="Pb8-Js-uk5" secondAttribute="bottom" id="Knk-RK-kMD"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
+                    <connections>
+                        <outlet property="tableView" destination="Pb8-Js-uk5" id="RQU-TO-yEa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PC0-Dj-zcg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1456" y="-700"/>
+        </scene>
+    </scenes>
+</document>

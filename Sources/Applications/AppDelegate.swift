@@ -12,6 +12,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private(set) var pushNotification: PushNotification = PushNotification()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        print("""
+        /**
+         * Welcome to Nobel.
+         * Copyright (c) Yuichi Nakayasu. All rights reserved.
+         */
+        open \(File.documentDirectory.path)
+        """)
         return true
     }
     

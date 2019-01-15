@@ -5,10 +5,7 @@ target 'Nobel' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   
-  pod 'Alamofire'
-  pod 'AlamofireImage'
-  pod 'Realm'#, :git => 'https://github.com/realm/realm-cocoa.git', :submodules => true
-  pod 'RealmSwift'#, :git => 'https://github.com/realm/realm-cocoa.git', :submodules => true
+  pod 'KRProgressHUD'
 
   target 'NobelTests' do
     inherit! :search_paths

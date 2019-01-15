@@ -11,11 +11,13 @@ extension Array {
     
     /// 最初の要素のインデックス
     var firstIndex: Int {
+        // TODO: 設計が良くない
         return indices.first ?? invalidIndex
     }
     
     /// 最後の要素のインデックス
     var lastIndex: Int {
+        // TODO: 設計が良くない
         return indices.last ?? invalidIndex
     }
     
@@ -23,6 +25,7 @@ extension Array {
     /// - Parameter index: インデックス
     /// - Returns: 最初のインデックスかどうか
     func isFirstIndex(_ index: Int) -> Bool {
+        // TODO: 設計が良くない
         return firstIndex != invalidIndex && firstIndex == index
     }
     
@@ -30,6 +33,7 @@ extension Array {
     /// - Parameter index: インデックス
     /// - Returns: 最後のインデックスかどうか
     func isLastIndex(_ index: Int) -> Bool {
+        // TODO: 設計が良くない
         return lastIndex != invalidIndex && lastIndex == index
     }
     
