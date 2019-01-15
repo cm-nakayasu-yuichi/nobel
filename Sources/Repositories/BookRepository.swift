@@ -29,7 +29,9 @@ class BookRepository: BookInteractorInput {
     weak var output: BookInteractorOutput!
     
     func loadShelf() {
-        
+        let entities = Json().decode(path: shelfFile.path, to: [BookEntity].self) ?? []
+        let models = BookTranslator().translate(entities)
+        output.loaded(shelf: models)
     }
     
     func loadBook(id: String) {
@@ -56,6 +58,17 @@ class BookRepository: BookInteractorInput {
     
     func delete(book: Book) {
         
+    }
+}
+
+extension BookRepository {
+    
+    private var shelfFile: File {
+        let file = File.documentDirectory.append(pathComponent: "shelf.json")
+        if !file.exists {
+            try? file.write(contents: "[]")
+        }
+        return file
     }
 }
 

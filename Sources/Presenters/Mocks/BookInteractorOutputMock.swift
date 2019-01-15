@@ -13,6 +13,10 @@ class BookInteractorOutputMock {
         self.repository.output = self
     }
     
+    func shelf() {
+        repository.loadShelf()
+    }
+    
     func addBook() {
         repository.addNewBook()
     }
