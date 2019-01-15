@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		14F68B186A04F58EAF53CBEE /* Pods_Nobel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27503D664FC7D973E915F959 /* Pods_Nobel.framework */; };
 		CB63D4A671CAE9EBD74D0FD6 /* Pods_NobelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7D26F1A68026AD6970C202 /* Pods_NobelTests.framework */; };
+		E40004DF21ED96EF00B8AE4F /* BookInteractorOutputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40004DE21ED96EF00B8AE4F /* BookInteractorOutputMock.swift */; };
 		E42C859521E8752A00AD648C /* ShelfBookEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42C859421E8752A00AD648C /* ShelfBookEntity.swift */; };
 		E42C859721E8820600AD648C /* ShelfBookTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42C859621E8820600AD648C /* ShelfBookTranslator.swift */; };
 		E48EC89321C816FB006980AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89121C816FB006980AF /* Main.storyboard */; };
@@ -122,6 +123,7 @@
 		4D7D26F1A68026AD6970C202 /* Pods_NobelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99D911490D0D82A03BDC9BFC /* Pods-NobelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NobelTests/Pods-NobelTests.release.xcconfig"; sourceTree = "<group>"; };
 		E2494F7CE4BD1B65E4D53DA8 /* Pods-NobelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NobelTests/Pods-NobelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E40004DE21ED96EF00B8AE4F /* BookInteractorOutputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookInteractorOutputMock.swift; sourceTree = "<group>"; };
 		E42C859421E8752A00AD648C /* ShelfBookEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfBookEntity.swift; sourceTree = "<group>"; };
 		E42C859621E8820600AD648C /* ShelfBookTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfBookTranslator.swift; sourceTree = "<group>"; };
 		E48EC88A21C816FB006980AF /* Nobel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nobel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -261,6 +263,15 @@
 			);
 			name = Pods;
 			sourceTree = "<group>";
+		};
+		E40004DD21ED96EF00B8AE4F /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				E40004DE21ED96EF00B8AE4F /* BookInteractorOutputMock.swift */,
+			);
+			name = Mocks;
+			path = Sources/Presenters/Mocks;
+			sourceTree = SOURCE_ROOT;
 		};
 		E48EC88121C816FB006980AF = {
 			isa = PBXGroup;
@@ -415,6 +426,7 @@
 		E4A6DAE521C81BA400562935 /* Translator */ = {
 			isa = PBXGroup;
 			children = (
+				E40004DD21ED96EF00B8AE4F /* Mocks */,
 				E42C859621E8820600AD648C /* ShelfBookTranslator.swift */,
 				E4AD8EE721E5F14E00F97B92 /* BookTranslator.swift */,
 				E4AD8EE621E5F14E00F97B92 /* ChapterTranslator.swift */,
@@ -794,6 +806,7 @@
 				E4A6DC2921C81BA500562935 /* Notifiable.swift in Sources */,
 				E4A6DBA921C81BA500562935 /* Chapter.swift in Sources */,
 				E4A6DBAA21C81BA500562935 /* Sentence.swift in Sources */,
+				E40004DF21ED96EF00B8AE4F /* BookInteractorOutputMock.swift in Sources */,
 				E4A6DB8621C81BA500562935 /* Json.swift in Sources */,
 				E4A6DC5D21C81E1E00562935 /* WireframeHelper.swift in Sources */,
 				E4A6DC4F21C81E1E00562935 /* DialogNoneBehavior.swift in Sources */,

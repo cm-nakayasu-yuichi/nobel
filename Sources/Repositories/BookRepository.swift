@@ -4,9 +4,9 @@
 //
 import Foundation
 
-protocol BookRepositoryInteractorInput: class {
+protocol BookInteractorInput: class {
     
-    var output: BookRepositoryInteractorOutput! { get set }
+    var output: BookInteractorOutput! { get set }
     
     func loadShelf()
     func loadBook(id: String)
@@ -17,16 +17,16 @@ protocol BookRepositoryInteractorInput: class {
     func delete(book: Book)
 }
 
-protocol BookRepositoryInteractorOutput: class {
+protocol BookInteractorOutput: class {
     
     func created(newBook: Book)
     func loaded(shelf: [ShelfBook])
     func loaded(book: Book)
 }
 
-class BookRepositoryRepository: BookRepositoryInteractorInput {
+class BookRepository: BookInteractorInput {
     
-    weak var output: BookRepositoryInteractorOutput!
+    weak var output: BookInteractorOutput!
     
     func loadShelf() {
         
@@ -59,7 +59,7 @@ class BookRepositoryRepository: BookRepositoryInteractorInput {
     }
 }
 
-extension BookRepositoryRepository: IdentifierGeneratable {
+extension BookRepository: IdentifierGeneratable {
     
     private func createNewBook() -> Book {
         let book = Book()

@@ -15,7 +15,8 @@ class BootstrapViewController: UITableViewController {
                 //Wireframe.showTodoList(from: bootstrap)
             }),
             (title: "書棚", handler: { bootstrap in
-                //Wireframe.showTodoList(from: bootstrap)
+                let mock = BookInteractorOutputMock()
+                mock.addBook()
             }),
             (title: "テスト", handler: { bootstrap in
                 Wireframe.showTest(from: bootstrap)
