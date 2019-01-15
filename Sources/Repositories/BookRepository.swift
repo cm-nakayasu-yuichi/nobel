@@ -8,103 +8,124 @@ protocol BookInteractorInput: class {
     
     var output: BookInteractorOutput! { get set }
     
-    func loadShelf()
-    func loadBook(id: String)
-    func create()
-    func addNewBook()
-    func add(book: Book)
-    func update(book: Book)
-    func delete(book: Book)
+    func loadChapters(of book: Book)
+    func loadSentences(of chapter: Chapter)
+    
+    func addNewChapter(to book: Book)
+    func addNewSentence(to chapter: Chapter)
 }
 
 protocol BookInteractorOutput: class {
     
-    func created(newBook: Book)
-    func loaded(shelf: [Book])
-    func loaded(book: Book)
+    func added(newChapter: Chapter)
+    func added(newSentence: Sentence)
+    
+    func loaded(chapters: [Chapter])
+    func loaded(sentences: [Sentence])
 }
 
 class BookRepository: BookInteractorInput {
     
     weak var output: BookInteractorOutput!
     
-    func loadShelf() {
-        let models = loadShelfModels()
-        output.loaded(shelf: models)
-    }
-    
-    func loadBook(id: String) {
+    func loadChapters(of book: Book) {
         
     }
     
-    func create() {
-        let book = createNewBook()
-        output.created(newBook: book)
+    func loadSentences(of chapter: Chapter) {
+        
     }
     
-    func addNewBook() {
-        let book = createNewBook()
-        add(book: book)
-    }
-    
-    func add(book: Book) {
-        var entities = loadShelfEntities()
-        let entity = BookTranslator().detranslate(book)
+    func addNewChapter(to book: Book) {
+        let chapter = createNewChapter(of: book)
+        let sentence = createNewSentence(of: chapter)
+        chapter.sentences.append(sentence)
+        
+        let entity = ChapterTranslator().detranslate(chapter)
+        
+        var entities = loadChapterEntities(of: book)
         entities.append(entity)
-        saveShelfEntities(entities)
-        loadShelf()
+        saveChapterEntities(entities, to: book)
     }
     
-    func update(book: Book) {
+    func addNewSentence(to chapter: Chapter) {
         
-    }
-    
-    func delete(book: Book) {
+        
+        
+        
+        
+        
         
     }
 }
 
 extension BookRepository {
     
-    private var shelfJsonFile: File {
-        let file = File.documentDirectory.append(pathComponent: "shelf.json")
+    private func jsonFile(of book: Book) -> File {
+        let dir = directory(of: book)
+        let file = dir.append(pathComponent: "book.json")
         if !file.exists {
             try? file.write(contents: "[]")
         }
         return file
     }
     
-    private func saveShelfEntities(_ entities: [BookEntity]) {
+    private func contentsFile(of sentence: Sentence, in book: Book) -> File {
+        let dir = directory(of: book)
+        let file = dir.append(pathComponent: "\(sentence.id!).txt")
+//        if !file.exists {
+//            try? file.write(contents: "")
+//        }
+        return file
+    }
+    
+    private func directory(of book: Book) -> File {
+        let dir = File.documentDirectory.append(pathComponent: book.id)
+        if !dir.exists {
+            try? dir.makeDirectory()
+        }
+        return dir
+    }
+    
+    private func loadChapterEntities(of book: Book) -> [ChapterEntity] {
+        return Json().decode(path: jsonFile(of: book).path, to: [ChapterEntity].self) ?? []
+    }
+    
+    private func loadSentenceEntities(of chapter: Chapter) -> [SentenceEntity] {
+        guard let book = chapter.book else {
+            return []
+        }
+        guard let chapterEntity = loadChapterEntities(of: book).filter({ $0.id == chapter.id }).first else {
+            return []
+        }
+        
+        
+        
+        
+//        return Json().decode(path: jsonFile(of: book).path, to: [ChapterEntity].self) ?? []
+    }
+    
+    private func saveChapterEntities(_ entities: [ChapterEntity], to book: Book) {
         let encoded = Json().encode(entities)
-        try? shelfJsonFile.write(contents: encoded)
-    }
-    
-    private func loadShelfEntities() -> [BookEntity] {
-        return Json().decode(path: shelfJsonFile.path, to: [BookEntity].self) ?? []
-    }
-    
-    private func loadShelfModels() -> [Book] {
-        let entities = loadShelfEntities()
-        return BookTranslator().translate(entities)
+        try? jsonFile(of: book).write(contents: encoded)
     }
 }
 
 extension BookRepository: IdentifierGeneratable {
     
-    private func createNewBook() -> Book {
-        let book = Book()
-        book.id = generateId()
-        book.title = "新しい書籍"
-        book.author = "" // TODO: アプリ設定から取得
-        book.outlineTitle = ""
-        book.outline = ""
-        book.bookmarkedChapterIndex = 0
-        book.bookmarkedPageIndex = 0
-        book.isLocked = false
-        book.colorTheme = ColorTheme.standard
-        book.textSize = TextSize.standard
-        book.fontType = FontType.standard
-        book.chapters = []
-        return book
+    private func createNewChapter(of book: Book?) -> Chapter {
+        let chapter = Chapter()
+        chapter.id = generateId()
+        chapter.title = "新しい章"
+        chapter.book = book
+        return chapter
+    }
+    
+    private func createNewSentence(of chapter: Chapter?) -> Sentence {
+        let sentence = Sentence()
+        sentence.id = generateId()
+        sentence.title = "新しい文章"
+        sentence.chapter = chapter
+        return sentence
     }
 }

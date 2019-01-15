@@ -24,12 +24,12 @@ class BootstrapViewController: UITableViewController {
                 print(File.documentDirectory.path)
             }),
             (title: "書棚閲覧", handler: { bootstrap in
-                let mock = BookInteractorOutputMock()
-                mock.shelf()
+                let mock = ShelfViewMock()
+                mock.load()
             }),
             (title: "書棚追加", handler: { bootstrap in
-                let mock = BookInteractorOutputMock()
-                mock.addBook()
+                let mock = ShelfViewMock()
+                mock.add()
             }),
             ]),
         ]

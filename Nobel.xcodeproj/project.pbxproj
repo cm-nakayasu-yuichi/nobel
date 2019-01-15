@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		14F68B186A04F58EAF53CBEE /* Pods_Nobel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27503D664FC7D973E915F959 /* Pods_Nobel.framework */; };
 		CB63D4A671CAE9EBD74D0FD6 /* Pods_NobelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7D26F1A68026AD6970C202 /* Pods_NobelTests.framework */; };
-		E40004DF21ED96EF00B8AE4F /* BookInteractorOutputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40004DE21ED96EF00B8AE4F /* BookInteractorOutputMock.swift */; };
 		E40004E121EDCF9F00B8AE4F /* ShelfPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40004E021EDCF9F00B8AE4F /* ShelfPresenter.swift */; };
+		E40004E321EDDB8B00B8AE4F /* ShelfRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40004E221EDDB8B00B8AE4F /* ShelfRepository.swift */; };
+		E40004E621EDE0D600B8AE4F /* ShelfViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40004E521EDE0D600B8AE4F /* ShelfViewMock.swift */; };
 		E48EC89321C816FB006980AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89121C816FB006980AF /* Main.storyboard */; };
 		E48EC89521C816FB006980AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89421C816FB006980AF /* Assets.xcassets */; };
 		E48EC89821C816FB006980AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89621C816FB006980AF /* LaunchScreen.storyboard */; };
@@ -100,8 +101,6 @@
 		E4AD8EE821E5F14E00F97B92 /* ChapterTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD8EE621E5F14E00F97B92 /* ChapterTranslator.swift */; };
 		E4AD8EE921E5F14E00F97B92 /* BookTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD8EE721E5F14E00F97B92 /* BookTranslator.swift */; };
 		E4AD8EED21E5F71300F97B92 /* BookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD8EEA21E5F71200F97B92 /* BookRepository.swift */; };
-		E4AD8EEE21E5F71300F97B92 /* SentenceRepository..swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD8EEB21E5F71300F97B92 /* SentenceRepository..swift */; };
-		E4AD8EEF21E5F71300F97B92 /* ChapterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD8EEC21E5F71300F97B92 /* ChapterRepository.swift */; };
 		E4AD8EF121E5F91100F97B92 /* IdentifierGeneratable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD8EF021E5F91100F97B92 /* IdentifierGeneratable.swift */; };
 /* End PBXBuildFile section */
 
@@ -122,8 +121,9 @@
 		4D7D26F1A68026AD6970C202 /* Pods_NobelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99D911490D0D82A03BDC9BFC /* Pods-NobelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NobelTests/Pods-NobelTests.release.xcconfig"; sourceTree = "<group>"; };
 		E2494F7CE4BD1B65E4D53DA8 /* Pods-NobelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NobelTests/Pods-NobelTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E40004DE21ED96EF00B8AE4F /* BookInteractorOutputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookInteractorOutputMock.swift; sourceTree = "<group>"; };
 		E40004E021EDCF9F00B8AE4F /* ShelfPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfPresenter.swift; sourceTree = "<group>"; };
+		E40004E221EDDB8B00B8AE4F /* ShelfRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfRepository.swift; sourceTree = "<group>"; };
+		E40004E521EDE0D600B8AE4F /* ShelfViewMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfViewMock.swift; sourceTree = "<group>"; };
 		E48EC88A21C816FB006980AF /* Nobel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nobel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48EC89221C816FB006980AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E48EC89421C816FB006980AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -217,8 +217,6 @@
 		E4AD8EE621E5F14E00F97B92 /* ChapterTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTranslator.swift; sourceTree = "<group>"; };
 		E4AD8EE721E5F14E00F97B92 /* BookTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTranslator.swift; sourceTree = "<group>"; };
 		E4AD8EEA21E5F71200F97B92 /* BookRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookRepository.swift; sourceTree = "<group>"; };
-		E4AD8EEB21E5F71300F97B92 /* SentenceRepository..swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceRepository..swift; sourceTree = "<group>"; };
-		E4AD8EEC21E5F71300F97B92 /* ChapterRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterRepository.swift; sourceTree = "<group>"; };
 		E4AD8EF021E5F91100F97B92 /* IdentifierGeneratable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierGeneratable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -262,14 +260,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E40004DD21ED96EF00B8AE4F /* Mocks */ = {
+		E40004E421EDE0D600B8AE4F /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				E40004DE21ED96EF00B8AE4F /* BookInteractorOutputMock.swift */,
+				E40004E521EDE0D600B8AE4F /* ShelfViewMock.swift */,
 			);
-			name = Mocks;
-			path = Sources/Presenters/Mocks;
-			sourceTree = SOURCE_ROOT;
+			path = Mocks;
+			sourceTree = "<group>";
 		};
 		E48EC88121C816FB006980AF = {
 			isa = PBXGroup;
@@ -403,9 +400,8 @@
 		E4A6DACC21C81BA400562935 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				E40004E221EDDB8B00B8AE4F /* ShelfRepository.swift */,
 				E4AD8EEA21E5F71200F97B92 /* BookRepository.swift */,
-				E4AD8EEC21E5F71300F97B92 /* ChapterRepository.swift */,
-				E4AD8EEB21E5F71300F97B92 /* SentenceRepository..swift */,
 				E4A6DAD521C81BA400562935 /* LaunchRepository.swift */,
 			);
 			path = Repositories;
@@ -424,7 +420,6 @@
 		E4A6DAE521C81BA400562935 /* Translator */ = {
 			isa = PBXGroup;
 			children = (
-				E40004DD21ED96EF00B8AE4F /* Mocks */,
 				E4AD8EE721E5F14E00F97B92 /* BookTranslator.swift */,
 				E4AD8EE621E5F14E00F97B92 /* ChapterTranslator.swift */,
 				E4AD8EE421E5F14700F97B92 /* SentenceTranslator.swift */,
@@ -435,6 +430,7 @@
 		E4A6DAEE21C81BA400562935 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				E40004E421EDE0D600B8AE4F /* Mocks */,
 				E4A6DAF021C81BA400562935 /* LaunchPresenter.swift */,
 				E40004E021EDCF9F00B8AE4F /* ShelfPresenter.swift */,
 			);
@@ -802,8 +798,8 @@
 				E4A6DBC921C81BA500562935 /* CoreGraphics+Dimension.swift in Sources */,
 				E4A6DC2921C81BA500562935 /* Notifiable.swift in Sources */,
 				E4A6DBA921C81BA500562935 /* Chapter.swift in Sources */,
+				E40004E621EDE0D600B8AE4F /* ShelfViewMock.swift in Sources */,
 				E4A6DBAA21C81BA500562935 /* Sentence.swift in Sources */,
-				E40004DF21ED96EF00B8AE4F /* BookInteractorOutputMock.swift in Sources */,
 				E4A6DB8621C81BA500562935 /* Json.swift in Sources */,
 				E4A6DC5D21C81E1E00562935 /* WireframeHelper.swift in Sources */,
 				E4A6DC4F21C81E1E00562935 /* DialogNoneBehavior.swift in Sources */,
@@ -826,7 +822,6 @@
 				E4A6DBC721C81BA500562935 /* String+App.swift in Sources */,
 				E40004E121EDCF9F00B8AE4F /* ShelfPresenter.swift in Sources */,
 				E4A6DBA821C81BA500562935 /* Book.swift in Sources */,
-				E4AD8EEF21E5F71300F97B92 /* ChapterRepository.swift in Sources */,
 				E4A6DBC621C81BA500562935 /* UIColor+App.swift in Sources */,
 				E4A6DB8C21C81BA500562935 /* WebApiResponse.swift in Sources */,
 				E4A6DBD821C81BA500562935 /* Color+Definition.swift in Sources */,
@@ -841,13 +836,13 @@
 				E4A6DC2C21C81BA500562935 /* ChapterEntity.swift in Sources */,
 				E4A6DC4C21C81E1E00562935 /* Appearances.swift in Sources */,
 				E4A6DC5C21C81E1E00562935 /* Timer.swift in Sources */,
+				E40004E321EDDB8B00B8AE4F /* ShelfRepository.swift in Sources */,
 				E4A6DBD021C81BA500562935 /* UIControl+App.swift in Sources */,
 				E4A6DBE921C81BA500562935 /* UnhighlightCell.swift in Sources */,
 				E4A6DB8A21C81BA500562935 /* NSPredicate+Realm.swift in Sources */,
 				E4A6DBD921C81BA500562935 /* Dimansions+Definition.swift in Sources */,
 				E4A6DB8821C81BA500562935 /* RealmSwift+App.swift in Sources */,
 				E4A6DBCB21C81BA500562935 /* Number+App.swift in Sources */,
-				E4AD8EEE21E5F71300F97B92 /* SentenceRepository..swift in Sources */,
 				E4AD8EE521E5F14700F97B92 /* SentenceTranslator.swift in Sources */,
 				E4A6DC5421C81E1E00562935 /* DialogRiseupBehavior.swift in Sources */,
 				E4A6DB8921C81BA500562935 /* RealmIdentifiedObject.swift in Sources */,
