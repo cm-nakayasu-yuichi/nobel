@@ -26,15 +26,9 @@
 		E400053321EE1F8D00B8AE4F /* ConfigureChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400051121EE1F8D00B8AE4F /* ConfigureChapterViewController.swift */; };
 		E400053421EE1F8D00B8AE4F /* ConfigureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400051221EE1F8D00B8AE4F /* ConfigureViewController.swift */; };
 		E400053521EE1F8D00B8AE4F /* ConfigureSentenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400051321EE1F8D00B8AE4F /* ConfigureSentenceViewController.swift */; };
-		E400053621EE1F8D00B8AE4F /* ChapterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400051521EE1F8D00B8AE4F /* ChapterTableViewController.swift */; };
-		E400053721EE1F8D00B8AE4F /* Chapter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E400051621EE1F8D00B8AE4F /* Chapter.storyboard */; };
-		E400053821EE1F8D00B8AE4F /* ChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400051721EE1F8D00B8AE4F /* ChapterViewController.swift */; };
 		E400053921EE1F8D00B8AE4F /* EditBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400051921EE1F8D00B8AE4F /* EditBoardViewController.swift */; };
 		E400053A21EE1F8D00B8AE4F /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400051A21EE1F8D00B8AE4F /* EditViewController.swift */; };
 		E400053B21EE1F8D00B8AE4F /* Edit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E400051B21EE1F8D00B8AE4F /* Edit.storyboard */; };
-		E400053C21EE1F8D00B8AE4F /* SentenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400051D21EE1F8D00B8AE4F /* SentenceViewController.swift */; };
-		E400053D21EE1F8D00B8AE4F /* Sentence.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E400051E21EE1F8D00B8AE4F /* Sentence.storyboard */; };
-		E400053E21EE1F8D00B8AE4F /* SentenceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400051F21EE1F8D00B8AE4F /* SentenceTableViewController.swift */; };
 		E400053F21EE1F8D00B8AE4F /* VerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400052121EE1F8D00B8AE4F /* VerticalView.swift */; };
 		E400054021EE1F8D00B8AE4F /* VerticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400052221EE1F8D00B8AE4F /* VerticalViewController.swift */; };
 		E400054121EE1F8D00B8AE4F /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E400052421EE1F8D00B8AE4F /* Book.storyboard */; };
@@ -168,15 +162,9 @@
 		E400051121EE1F8D00B8AE4F /* ConfigureChapterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureChapterViewController.swift; sourceTree = "<group>"; };
 		E400051221EE1F8D00B8AE4F /* ConfigureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureViewController.swift; sourceTree = "<group>"; };
 		E400051321EE1F8D00B8AE4F /* ConfigureSentenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureSentenceViewController.swift; sourceTree = "<group>"; };
-		E400051521EE1F8D00B8AE4F /* ChapterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTableViewController.swift; sourceTree = "<group>"; };
-		E400051621EE1F8D00B8AE4F /* Chapter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chapter.storyboard; sourceTree = "<group>"; };
-		E400051721EE1F8D00B8AE4F /* ChapterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterViewController.swift; sourceTree = "<group>"; };
 		E400051921EE1F8D00B8AE4F /* EditBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditBoardViewController.swift; sourceTree = "<group>"; };
 		E400051A21EE1F8D00B8AE4F /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		E400051B21EE1F8D00B8AE4F /* Edit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Edit.storyboard; sourceTree = "<group>"; };
-		E400051D21EE1F8D00B8AE4F /* SentenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceViewController.swift; sourceTree = "<group>"; };
-		E400051E21EE1F8D00B8AE4F /* Sentence.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Sentence.storyboard; sourceTree = "<group>"; };
-		E400051F21EE1F8D00B8AE4F /* SentenceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceTableViewController.swift; sourceTree = "<group>"; };
 		E400052121EE1F8D00B8AE4F /* VerticalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalView.swift; sourceTree = "<group>"; };
 		E400052221EE1F8D00B8AE4F /* VerticalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalViewController.swift; sourceTree = "<group>"; };
 		E400052421EE1F8D00B8AE4F /* Book.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Book.storyboard; sourceTree = "<group>"; };
@@ -354,9 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				E400050A21EE1F8D00B8AE4F /* Configure */,
-				E400051421EE1F8D00B8AE4F /* Chapter */,
 				E400051821EE1F8D00B8AE4F /* Edit */,
-				E400051C21EE1F8D00B8AE4F /* Sentence */,
 				E400052021EE1F8D00B8AE4F /* VerticalView */,
 				E400052321EE1F8D00B8AE4F /* Book */,
 				E400052B21EE1F8D00B8AE4F /* ManageTable */,
@@ -380,16 +366,6 @@
 			path = Configure;
 			sourceTree = "<group>";
 		};
-		E400051421EE1F8D00B8AE4F /* Chapter */ = {
-			isa = PBXGroup;
-			children = (
-				E400051621EE1F8D00B8AE4F /* Chapter.storyboard */,
-				E400051521EE1F8D00B8AE4F /* ChapterTableViewController.swift */,
-				E400051721EE1F8D00B8AE4F /* ChapterViewController.swift */,
-			);
-			path = Chapter;
-			sourceTree = "<group>";
-		};
 		E400051821EE1F8D00B8AE4F /* Edit */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,16 +374,6 @@
 				E400051921EE1F8D00B8AE4F /* EditBoardViewController.swift */,
 			);
 			path = Edit;
-			sourceTree = "<group>";
-		};
-		E400051C21EE1F8D00B8AE4F /* Sentence */ = {
-			isa = PBXGroup;
-			children = (
-				E400051E21EE1F8D00B8AE4F /* Sentence.storyboard */,
-				E400051D21EE1F8D00B8AE4F /* SentenceViewController.swift */,
-				E400051F21EE1F8D00B8AE4F /* SentenceTableViewController.swift */,
-			);
-			path = Sentence;
 			sourceTree = "<group>";
 		};
 		E400052021EE1F8D00B8AE4F /* VerticalView */ = {
@@ -841,13 +807,11 @@
 				E48EC89521C816FB006980AF /* Assets.xcassets in Resources */,
 				E4A6DBFA21C81BA500562935 /* Bootstrap.storyboard in Resources */,
 				E400053021EE1F8D00B8AE4F /* preview.txt in Resources */,
-				E400053721EE1F8D00B8AE4F /* Chapter.storyboard in Resources */,
 				E400052D21EE1F8D00B8AE4F /* Configure.storyboard in Resources */,
 				E400053B21EE1F8D00B8AE4F /* Edit.storyboard in Resources */,
 				E48EC89321C816FB006980AF /* Main.storyboard in Resources */,
 				E4A6DBEF21C81BA500562935 /* Test.storyboard in Resources */,
 				E4A6DBFD21C81BA500562935 /* Launch.storyboard in Resources */,
-				E400053D21EE1F8D00B8AE4F /* Sentence.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -939,12 +903,10 @@
 				E4A6DBDF21C81BA500562935 /* AppDelegate.swift in Sources */,
 				E40004EF21EE1F2500B8AE4F /* DataManager.swift in Sources */,
 				E4A6DBDA21C81BA500562935 /* Wireframe.swift in Sources */,
-				E400053821EE1F8D00B8AE4F /* ChapterViewController.swift in Sources */,
 				E4A6DC5521C81E1E00562935 /* DialogFadeBehavior.swift in Sources */,
 				E400058221EE2CDF00B8AE4F /* NBCellView.swift in Sources */,
 				E400055021EE218B00B8AE4F /* Shelf.swift in Sources */,
 				E4A6DC5821C81E1E00562935 /* File.swift in Sources */,
-				E400053621EE1F8D00B8AE4F /* ChapterTableViewController.swift in Sources */,
 				E4A6DBD121C81BA500562935 /* Codable+App.swift in Sources */,
 				E4A6DC4D21C81E1E00562935 /* KeyboardManager.swift in Sources */,
 				E4A6DC2721C81BA500562935 /* Translator.swift in Sources */,
@@ -975,7 +937,6 @@
 				E4A6DC5721C81E1E00562935 /* AlertHelper.swift in Sources */,
 				E4A6DBC921C81BA500562935 /* CoreGraphics+Dimension.swift in Sources */,
 				E4A6DC2921C81BA500562935 /* Notifiable.swift in Sources */,
-				E400053C21EE1F8D00B8AE4F /* SentenceViewController.swift in Sources */,
 				E40004F321EE1F2500B8AE4F /* DataManagableEnum.swift in Sources */,
 				E4A6DB8621C81BA500562935 /* Json.swift in Sources */,
 				E4A6DC5D21C81E1E00562935 /* WireframeHelper.swift in Sources */,
@@ -1039,7 +1000,6 @@
 				E400055221EE218B00B8AE4F /* Sentence.swift in Sources */,
 				E40004F821EE1F5200B8AE4F /* HUD.swift in Sources */,
 				E4A6DC2821C81BA500562935 /* Configurable.swift in Sources */,
-				E400053E21EE1F8D00B8AE4F /* SentenceTableViewController.swift in Sources */,
 				E400059221EE2CE000B8AE4F /* App.swift in Sources */,
 				E4A6DC5321C81E1E00562935 /* DialogBottomDrawBehavior.swift in Sources */,
 				E4A6DBDB21C81BA500562935 /* File+Definition.swift in Sources */,
