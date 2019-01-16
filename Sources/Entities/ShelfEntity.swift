@@ -5,5 +5,5 @@
 import Foundation
 
 struct ShelfEntity: Codable {
-    
+    let books: [BookEntity]
 }
