@@ -191,9 +191,9 @@ extension Book: DataManagerIdentifiableEntity {
             "outlineTitle"           : outlineTitle,
             "outline"                : outline,
             "locked"                 : isLocked,
-            "colorTheme"             : colorTheme.hashValue,
-            "textSize"               : textSize.hashValue,
-            "fontType"               : fontType.hashValue,
+            "colorTheme"             : colorTheme.rawValue,
+            "textSize"               : textSize.rawValue,
+            "fontType"               : fontType.rawValue,
             "bookmarkedChapterIndex" : bookmarkedChapterIndex,
             "bookmarkedPageIndex"    : bookmarkedPageIndex,
             ]
