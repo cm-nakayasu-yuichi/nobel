@@ -329,14 +329,18 @@ extension BookViewController: BookMenuViewControllerDelegte {
     
     /// 設定ボタン押下時
     func bookMenuDidTapConfigure(_ bookMenu: BookMenuViewController) {
-		self.present(ConfigureViewController.create(scenario: .update(book: self.book)) { [unowned self] (vc, configuredBook) in
-			self.isLoading = true
-			self.book = configuredBook
-			self.book.save()
-			vc.dismiss() {
-				self.reloadVertical()
-			}
-		})
+//        self.present(ConfigureViewController.create(scenario: .update(book: self.book)) { [unowned self] (vc, configuredBook) in
+//            self.isLoading = true
+//            self.book = configuredBook
+//            self.book.save()
+//            vc.dismiss() {
+//                self.reloadVertical()
+//            }
+//        })
+        Wireframe.showConfigure(from: self, scenario: .update(book: self.book)) { [unowned self] vc, configuredBook in
+            // TODO:
+            self.reloadVertical()
+        }
     }
     
     /// 全文コピーボタン押下時

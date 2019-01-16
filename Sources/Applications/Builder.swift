@@ -36,6 +36,17 @@ class Builder {
         return view
     }
     
+    func configure(scenario: ConfigureScenario, configured: ConfigureViewController.Configured? = nil) -> ConfigureViewController {
+//        let view = instantiate(ConfigureViewController.self, storyboardName: "Configure")
+        let root = UIViewController()
+        let view = ConfigureViewController(
+            rootViewController: root,
+            scenario: scenario,
+            configured: configured
+        )
+        return view
+    }
+    
     func test() -> TestViewController {
         let view = instantiate(TestViewController.self, storyboardName: "Test")
         return view

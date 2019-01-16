@@ -16,6 +16,11 @@ class Wireframe {
         helper.present(crossDisolve: viewController, from: fromViewController)
     }
     
+    static func showConfigure(from fromViewController: UIViewController, scenario: ConfigureScenario, configured: ConfigureViewController.Configured? = nil) {
+        let viewController = builder.configure(scenario: scenario, configured: configured)
+        helper.present(viewController, from: fromViewController)
+    }
+    
     static func showTest(from fromViewController: UIViewController) {
         let viewController = builder.test()
         helper.present(helper.withinNavigation(viewController), from: fromViewController)

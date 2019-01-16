@@ -77,13 +77,15 @@ class ShelfViewController: UIViewController {
     
     /// 書籍追加ボタン押下時
     @IBAction func didTapAddButton() {
-        self.present(ConfigureViewController.create(scenario: .initialize) { [unowned self] (vc, configuredBook) in
-            configuredBook.save()
-            App.shelf.addBook(configuredBook)
-            vc.dismiss() {
-                self.collectionView.reloadData()
-            }
-        })
+        Wireframe.showConfigure(from: self, scenario: .initialize) { [unowned self] vc, configuredBook in
+//            configuredBook.save()
+//            App.shelf.addBook(configuredBook)
+//            vc.dismiss() {
+//                self.collectionView.reloadData()
+//            }
+            // TODO:
+            self.collectionView.reloadData()
+        }
     }
     
     /// 書籍削除ボタン押下時

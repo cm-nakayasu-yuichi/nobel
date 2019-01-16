@@ -17,15 +17,6 @@
 		E40004F421EE1F2500B8AE4F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40004EE21EE1F2500B8AE4F /* Extensions.swift */; };
 		E40004F821EE1F5200B8AE4F /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40004F621EE1F5200B8AE4F /* HUD.swift */; };
 		E40004F921EE1F5200B8AE4F /* MovableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40004F721EE1F5200B8AE4F /* MovableCollectionViewCell.swift */; };
-		E400052D21EE1F8D00B8AE4F /* Configure.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E400050B21EE1F8D00B8AE4F /* Configure.storyboard */; };
-		E400052E21EE1F8D00B8AE4F /* ConfigureTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400050C21EE1F8D00B8AE4F /* ConfigureTextFieldViewController.swift */; };
-		E400052F21EE1F8D00B8AE4F /* ConfigureMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400050D21EE1F8D00B8AE4F /* ConfigureMenuViewController.swift */; };
-		E400053021EE1F8D00B8AE4F /* preview.txt in Resources */ = {isa = PBXBuildFile; fileRef = E400050E21EE1F8D00B8AE4F /* preview.txt */; };
-		E400053121EE1F8D00B8AE4F /* ConfigureChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400050F21EE1F8D00B8AE4F /* ConfigureChildViewController.swift */; };
-		E400053221EE1F8D00B8AE4F /* ConfigureThemeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400051021EE1F8D00B8AE4F /* ConfigureThemeSelectViewController.swift */; };
-		E400053321EE1F8D00B8AE4F /* ConfigureChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400051121EE1F8D00B8AE4F /* ConfigureChapterViewController.swift */; };
-		E400053421EE1F8D00B8AE4F /* ConfigureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400051221EE1F8D00B8AE4F /* ConfigureViewController.swift */; };
-		E400053521EE1F8D00B8AE4F /* ConfigureSentenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400051321EE1F8D00B8AE4F /* ConfigureSentenceViewController.swift */; };
 		E400053921EE1F8D00B8AE4F /* EditBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400051921EE1F8D00B8AE4F /* EditBoardViewController.swift */; };
 		E400053A21EE1F8D00B8AE4F /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400051A21EE1F8D00B8AE4F /* EditViewController.swift */; };
 		E400053B21EE1F8D00B8AE4F /* Edit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E400051B21EE1F8D00B8AE4F /* Edit.storyboard */; };
@@ -61,6 +52,8 @@
 		E40005B321EEDA7800B8AE4F /* ChapterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40005AF21EEDA7800B8AE4F /* ChapterEntity.swift */; };
 		E40005B421EEDA7800B8AE4F /* SentenceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40005B021EEDA7800B8AE4F /* SentenceEntity.swift */; };
 		E40005B521EEDA7800B8AE4F /* BookEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40005B121EEDA7800B8AE4F /* BookEntity.swift */; };
+		E40005C621EF369D00B8AE4F /* ConfigureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40005BE21EF369D00B8AE4F /* ConfigureViewController.swift */; };
+		E40005C821EF375400B8AE4F /* ConfigureScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40005C721EF375400B8AE4F /* ConfigureScenario.swift */; };
 		E48EC89321C816FB006980AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89121C816FB006980AF /* Main.storyboard */; };
 		E48EC89521C816FB006980AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89421C816FB006980AF /* Assets.xcassets */; };
 		E48EC89821C816FB006980AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89621C816FB006980AF /* LaunchScreen.storyboard */; };
@@ -153,15 +146,6 @@
 		E40004EE21EE1F2500B8AE4F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E40004F621EE1F5200B8AE4F /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		E40004F721EE1F5200B8AE4F /* MovableCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovableCollectionViewCell.swift; sourceTree = "<group>"; };
-		E400050B21EE1F8D00B8AE4F /* Configure.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Configure.storyboard; sourceTree = "<group>"; };
-		E400050C21EE1F8D00B8AE4F /* ConfigureTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureTextFieldViewController.swift; sourceTree = "<group>"; };
-		E400050D21EE1F8D00B8AE4F /* ConfigureMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureMenuViewController.swift; sourceTree = "<group>"; };
-		E400050E21EE1F8D00B8AE4F /* preview.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = preview.txt; sourceTree = "<group>"; };
-		E400050F21EE1F8D00B8AE4F /* ConfigureChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureChildViewController.swift; sourceTree = "<group>"; };
-		E400051021EE1F8D00B8AE4F /* ConfigureThemeSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureThemeSelectViewController.swift; sourceTree = "<group>"; };
-		E400051121EE1F8D00B8AE4F /* ConfigureChapterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureChapterViewController.swift; sourceTree = "<group>"; };
-		E400051221EE1F8D00B8AE4F /* ConfigureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureViewController.swift; sourceTree = "<group>"; };
-		E400051321EE1F8D00B8AE4F /* ConfigureSentenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureSentenceViewController.swift; sourceTree = "<group>"; };
 		E400051921EE1F8D00B8AE4F /* EditBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditBoardViewController.swift; sourceTree = "<group>"; };
 		E400051A21EE1F8D00B8AE4F /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		E400051B21EE1F8D00B8AE4F /* Edit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Edit.storyboard; sourceTree = "<group>"; };
@@ -197,6 +181,8 @@
 		E40005AF21EEDA7800B8AE4F /* ChapterEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterEntity.swift; sourceTree = "<group>"; };
 		E40005B021EEDA7800B8AE4F /* SentenceEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceEntity.swift; sourceTree = "<group>"; };
 		E40005B121EEDA7800B8AE4F /* BookEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookEntity.swift; sourceTree = "<group>"; };
+		E40005BE21EF369D00B8AE4F /* ConfigureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureViewController.swift; sourceTree = "<group>"; };
+		E40005C721EF375400B8AE4F /* ConfigureScenario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureScenario.swift; sourceTree = "<group>"; };
 		E48EC88A21C816FB006980AF /* Nobel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nobel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48EC89221C816FB006980AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E48EC89421C816FB006980AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -341,29 +327,12 @@
 		E400050921EE1F8D00B8AE4F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E400050A21EE1F8D00B8AE4F /* Configure */,
 				E400051821EE1F8D00B8AE4F /* Edit */,
 				E400052021EE1F8D00B8AE4F /* VerticalView */,
 				E400052321EE1F8D00B8AE4F /* Book */,
 				E400052B21EE1F8D00B8AE4F /* ManageTable */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		E400050A21EE1F8D00B8AE4F /* Configure */ = {
-			isa = PBXGroup;
-			children = (
-				E400050B21EE1F8D00B8AE4F /* Configure.storyboard */,
-				E400050C21EE1F8D00B8AE4F /* ConfigureTextFieldViewController.swift */,
-				E400050D21EE1F8D00B8AE4F /* ConfigureMenuViewController.swift */,
-				E400050F21EE1F8D00B8AE4F /* ConfigureChildViewController.swift */,
-				E400051021EE1F8D00B8AE4F /* ConfigureThemeSelectViewController.swift */,
-				E400051121EE1F8D00B8AE4F /* ConfigureChapterViewController.swift */,
-				E400051221EE1F8D00B8AE4F /* ConfigureViewController.swift */,
-				E400051321EE1F8D00B8AE4F /* ConfigureSentenceViewController.swift */,
-				E400050E21EE1F8D00B8AE4F /* preview.txt */,
-			);
-			path = Configure;
 			sourceTree = "<group>";
 		};
 		E400051821EE1F8D00B8AE4F /* Edit */ = {
@@ -441,6 +410,15 @@
 				E400059B21EEC1EA00B8AE4F /* ShelfCell.swift */,
 			);
 			path = Shelf;
+			sourceTree = "<group>";
+		};
+		E40005B621EF369D00B8AE4F /* Configure */ = {
+			isa = PBXGroup;
+			children = (
+				E40005C721EF375400B8AE4F /* ConfigureScenario.swift */,
+				E40005BE21EF369D00B8AE4F /* ConfigureViewController.swift */,
+			);
+			path = Configure;
 			sourceTree = "<group>";
 		};
 		E48EC88121C816FB006980AF = {
@@ -646,6 +624,7 @@
 				E4A6DB3A21C81BA500562935 /* Bootstrap.storyboard */,
 				E4A6DB4D21C81BA500562935 /* BootstrapViewController.swift */,
 				E400059921EEC1EA00B8AE4F /* Shelf */,
+				E40005B621EF369D00B8AE4F /* Configure */,
 				E4A6DB3E21C81BA500562935 /* Launch */,
 				E4A6DB2B21C81BA500562935 /* Test */,
 			);
@@ -806,8 +785,6 @@
 				E400054121EE1F8D00B8AE4F /* Book.storyboard in Resources */,
 				E48EC89521C816FB006980AF /* Assets.xcassets in Resources */,
 				E4A6DBFA21C81BA500562935 /* Bootstrap.storyboard in Resources */,
-				E400053021EE1F8D00B8AE4F /* preview.txt in Resources */,
-				E400052D21EE1F8D00B8AE4F /* Configure.storyboard in Resources */,
 				E400053B21EE1F8D00B8AE4F /* Edit.storyboard in Resources */,
 				E48EC89321C816FB006980AF /* Main.storyboard in Resources */,
 				E4A6DBEF21C81BA500562935 /* Test.storyboard in Resources */,
@@ -921,16 +898,13 @@
 				E400055521EE218B00B8AE4F /* Chapter.swift in Sources */,
 				E4A6DBEE21C81BA500562935 /* TestViewController.swift in Sources */,
 				E400053A21EE1F8D00B8AE4F /* EditViewController.swift in Sources */,
-				E400053121EE1F8D00B8AE4F /* ConfigureChildViewController.swift in Sources */,
 				E400057F21EE2CDF00B8AE4F /* NBTextInput.swift in Sources */,
-				E400053421EE1F8D00B8AE4F /* ConfigureViewController.swift in Sources */,
 				E40005A921EEC1EA00B8AE4F /* ShelfAdapter.swift in Sources */,
 				E40005A421EEC1EA00B8AE4F /* ShelfViewController.swift in Sources */,
 				E4A6DC5B21C81E1E00562935 /* TextFieldManager.swift in Sources */,
 				E40005A521EEC1EA00B8AE4F /* ShelfCell.swift in Sources */,
 				E400055621EE218B00B8AE4F /* GlobalConfigure.swift in Sources */,
 				E4A6DBDE21C81BA500562935 /* Font+Definition.swift in Sources */,
-				E400052F21EE1F8D00B8AE4F /* ConfigureMenuViewController.swift in Sources */,
 				E4A6DC5021C81E1E00562935 /* DialogLeftDrawBehavior.swift in Sources */,
 				E4A6DBCD21C81BA500562935 /* UIViewController+App.swift in Sources */,
 				E40004F121EE1F2500B8AE4F /* DataType.swift in Sources */,
@@ -952,9 +926,8 @@
 				E4A6DBA521C81BA500562935 /* LaunchRepository.swift in Sources */,
 				E4A6DBBD21C81BA500562935 /* LaunchPresenter.swift in Sources */,
 				E4A6DBD321C81BA500562935 /* UIImage+App.swift in Sources */,
-				E400052E21EE1F8D00B8AE4F /* ConfigureTextFieldViewController.swift in Sources */,
 				E40005A721EEC1EA00B8AE4F /* ShelfRepository.swift in Sources */,
-				E400053321EE1F8D00B8AE4F /* ConfigureChapterViewController.swift in Sources */,
+				E40005C621EF369D00B8AE4F /* ConfigureViewController.swift in Sources */,
 				E4A6DBFE21C81BA500562935 /* LaunchViewController.swift in Sources */,
 				E400058021EE2CDF00B8AE4F /* NBStoryboard.swift in Sources */,
 				E4A6DC5621C81E1E00562935 /* Dialog.swift in Sources */,
@@ -980,10 +953,10 @@
 				E4A6DBDC21C81BA500562935 /* PushNotification.swift in Sources */,
 				E40005B321EEDA7800B8AE4F /* ChapterEntity.swift in Sources */,
 				E4A6DC3521C81BA500562935 /* AppConfig.swift in Sources */,
+				E40005C821EF375400B8AE4F /* ConfigureScenario.swift in Sources */,
 				E4A6DC4C21C81E1E00562935 /* Appearances.swift in Sources */,
 				E4A6DC5C21C81E1E00562935 /* Timer.swift in Sources */,
 				E4A6DBD021C81BA500562935 /* UIControl+App.swift in Sources */,
-				E400053521EE1F8D00B8AE4F /* ConfigureSentenceViewController.swift in Sources */,
 				E40004F421EE1F2500B8AE4F /* Extensions.swift in Sources */,
 				E4A6DBE921C81BA500562935 /* UnhighlightCell.swift in Sources */,
 				E40005AC21EEC1EA00B8AE4F /* ShelfPresenter.swift in Sources */,
@@ -994,7 +967,6 @@
 				E4A6DBCA21C81BA500562935 /* IndexPath+App.swift in Sources */,
 				E40004F921EE1F5200B8AE4F /* MovableCollectionViewCell.swift in Sources */,
 				E4A6DBC821C81BA500562935 /* CoreGraphics+App.swift in Sources */,
-				E400053221EE1F8D00B8AE4F /* ConfigureThemeSelectViewController.swift in Sources */,
 				E400059821EE2CE000B8AE4F /* NB.swift in Sources */,
 				E4A6DC4E21C81E1E00562935 /* DialogRightDrawBehavior.swift in Sources */,
 				E400055221EE218B00B8AE4F /* Sentence.swift in Sources */,
