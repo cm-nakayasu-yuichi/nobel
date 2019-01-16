@@ -21,6 +21,21 @@ class Builder {
         return view
     }
     
+    func shelf() -> ShelfViewController {
+        let view = instantiate(ShelfViewController.self, storyboardName: "Shelf")
+        
+        let presenter = ShelfPresenter()
+        presenter.view = view
+        
+        let interactor: ShelfInteractorInput = ShelfRepository()
+        interactor.output = presenter
+        presenter.interactor = interactor
+        
+        view.presenter = presenter
+        
+        return view
+    }
+    
     func test() -> TestViewController {
         let view = instantiate(TestViewController.self, storyboardName: "Test")
         return view

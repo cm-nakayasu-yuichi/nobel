@@ -11,6 +11,11 @@ class Wireframe {
         helper.present(crossDisolve: viewController, from: fromViewController)
     }
     
+    static func showShelf(from fromViewController: UIViewController) {
+        let viewController = builder.shelf()
+        helper.present(crossDisolve: viewController, from: fromViewController)
+    }
+    
     static func showTest(from fromViewController: UIViewController) {
         let viewController = builder.test()
         helper.present(helper.withinNavigation(viewController), from: fromViewController)

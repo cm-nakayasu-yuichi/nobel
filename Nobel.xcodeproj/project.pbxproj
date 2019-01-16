@@ -40,9 +40,6 @@
 		E400054121EE1F8D00B8AE4F /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E400052421EE1F8D00B8AE4F /* Book.storyboard */; };
 		E400054221EE1F8D00B8AE4F /* BookMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400052521EE1F8D00B8AE4F /* BookMenuViewController.swift */; };
 		E400054321EE1F8D00B8AE4F /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400052621EE1F8D00B8AE4F /* BookViewController.swift */; };
-		E400054421EE1F8D00B8AE4F /* ShelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400052821EE1F8D00B8AE4F /* ShelfViewController.swift */; };
-		E400054521EE1F8D00B8AE4F /* ShelfCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400052921EE1F8D00B8AE4F /* ShelfCollectionViewController.swift */; };
-		E400054621EE1F8D00B8AE4F /* Shelf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E400052A21EE1F8D00B8AE4F /* Shelf.storyboard */; };
 		E400054721EE1F8D00B8AE4F /* ManageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400052C21EE1F8D00B8AE4F /* ManageTableViewController.swift */; };
 		E400055021EE218B00B8AE4F /* Shelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400054921EE218B00B8AE4F /* Shelf.swift */; };
 		E400055221EE218B00B8AE4F /* Sentence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400054B21EE218B00B8AE4F /* Sentence.swift */; };
@@ -59,6 +56,13 @@
 		E400058E21EE2CE000B8AE4F /* NBDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400056F21EE2CDF00B8AE4F /* NBDialog.swift */; };
 		E400059221EE2CE000B8AE4F /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400057321EE2CDF00B8AE4F /* App.swift */; };
 		E400059821EE2CE000B8AE4F /* NB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400057921EE2CDF00B8AE4F /* NB.swift */; };
+		E40005A421EEC1EA00B8AE4F /* ShelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400059A21EEC1EA00B8AE4F /* ShelfViewController.swift */; };
+		E40005A521EEC1EA00B8AE4F /* ShelfCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400059B21EEC1EA00B8AE4F /* ShelfCell.swift */; };
+		E40005A721EEC1EA00B8AE4F /* ShelfRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400059D21EEC1EA00B8AE4F /* ShelfRepository.swift */; };
+		E40005A921EEC1EA00B8AE4F /* ShelfAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E400059F21EEC1EA00B8AE4F /* ShelfAdapter.swift */; };
+		E40005AB21EEC1EA00B8AE4F /* ShelfTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40005A121EEC1EA00B8AE4F /* ShelfTranslator.swift */; };
+		E40005AC21EEC1EA00B8AE4F /* ShelfPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40005A221EEC1EA00B8AE4F /* ShelfPresenter.swift */; };
+		E40005AD21EEC1EA00B8AE4F /* Shelf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40005A321EEC1EA00B8AE4F /* Shelf.storyboard */; };
 		E48EC89321C816FB006980AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89121C816FB006980AF /* Main.storyboard */; };
 		E48EC89521C816FB006980AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89421C816FB006980AF /* Assets.xcassets */; };
 		E48EC89821C816FB006980AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89621C816FB006980AF /* LaunchScreen.storyboard */; };
@@ -68,7 +72,6 @@
 		E4A6DB9121C81BA500562935 /* FontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DABE21C81BA400562935 /* FontType.swift */; };
 		E4A6DB9221C81BA500562935 /* TextSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DABF21C81BA400562935 /* TextSize.swift */; };
 		E4A6DBA521C81BA500562935 /* LaunchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DAD521C81BA400562935 /* LaunchRepository.swift */; };
-		E4A6DBBB21C81BA500562935 /* CalendarSettingTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DAED21C81BA400562935 /* CalendarSettingTranslator.swift */; };
 		E4A6DBBD21C81BA500562935 /* LaunchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DAF021C81BA400562935 /* LaunchPresenter.swift */; };
 		E4A6DBC621C81BA500562935 /* UIColor+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DAFA21C81BA400562935 /* UIColor+App.swift */; };
 		E4A6DBC721C81BA500562935 /* String+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DAFB21C81BA400562935 /* String+App.swift */; };
@@ -177,9 +180,6 @@
 		E400052421EE1F8D00B8AE4F /* Book.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Book.storyboard; sourceTree = "<group>"; };
 		E400052521EE1F8D00B8AE4F /* BookMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookMenuViewController.swift; sourceTree = "<group>"; };
 		E400052621EE1F8D00B8AE4F /* BookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
-		E400052821EE1F8D00B8AE4F /* ShelfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfViewController.swift; sourceTree = "<group>"; };
-		E400052921EE1F8D00B8AE4F /* ShelfCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfCollectionViewController.swift; sourceTree = "<group>"; };
-		E400052A21EE1F8D00B8AE4F /* Shelf.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shelf.storyboard; sourceTree = "<group>"; };
 		E400052C21EE1F8D00B8AE4F /* ManageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageTableViewController.swift; sourceTree = "<group>"; };
 		E400054921EE218B00B8AE4F /* Shelf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shelf.swift; sourceTree = "<group>"; };
 		E400054B21EE218B00B8AE4F /* Sentence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sentence.swift; sourceTree = "<group>"; };
@@ -196,6 +196,13 @@
 		E400056F21EE2CDF00B8AE4F /* NBDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBDialog.swift; sourceTree = "<group>"; };
 		E400057321EE2CDF00B8AE4F /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		E400057921EE2CDF00B8AE4F /* NB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NB.swift; sourceTree = "<group>"; };
+		E400059A21EEC1EA00B8AE4F /* ShelfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfViewController.swift; sourceTree = "<group>"; };
+		E400059B21EEC1EA00B8AE4F /* ShelfCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfCell.swift; sourceTree = "<group>"; };
+		E400059D21EEC1EA00B8AE4F /* ShelfRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfRepository.swift; sourceTree = "<group>"; };
+		E400059F21EEC1EA00B8AE4F /* ShelfAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfAdapter.swift; sourceTree = "<group>"; };
+		E40005A121EEC1EA00B8AE4F /* ShelfTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfTranslator.swift; sourceTree = "<group>"; };
+		E40005A221EEC1EA00B8AE4F /* ShelfPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfPresenter.swift; sourceTree = "<group>"; };
+		E40005A321EEC1EA00B8AE4F /* Shelf.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shelf.storyboard; sourceTree = "<group>"; };
 		E48EC88A21C816FB006980AF /* Nobel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nobel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48EC89221C816FB006980AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E48EC89421C816FB006980AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -209,7 +216,6 @@
 		E4A6DABE21C81BA400562935 /* FontType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontType.swift; sourceTree = "<group>"; };
 		E4A6DABF21C81BA400562935 /* TextSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSize.swift; sourceTree = "<group>"; };
 		E4A6DAD521C81BA400562935 /* LaunchRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchRepository.swift; sourceTree = "<group>"; };
-		E4A6DAED21C81BA400562935 /* CalendarSettingTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarSettingTranslator.swift; sourceTree = "<group>"; };
 		E4A6DAF021C81BA400562935 /* LaunchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchPresenter.swift; sourceTree = "<group>"; };
 		E4A6DAFA21C81BA400562935 /* UIColor+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+App.swift"; sourceTree = "<group>"; };
 		E4A6DAFB21C81BA400562935 /* String+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+App.swift"; sourceTree = "<group>"; };
@@ -349,7 +355,6 @@
 				E400051C21EE1F8D00B8AE4F /* Sentence */,
 				E400052021EE1F8D00B8AE4F /* VerticalView */,
 				E400052321EE1F8D00B8AE4F /* Book */,
-				E400052721EE1F8D00B8AE4F /* Shelf */,
 				E400052B21EE1F8D00B8AE4F /* ManageTable */,
 			);
 			path = Controllers;
@@ -420,16 +425,6 @@
 			path = Book;
 			sourceTree = "<group>";
 		};
-		E400052721EE1F8D00B8AE4F /* Shelf */ = {
-			isa = PBXGroup;
-			children = (
-				E400052A21EE1F8D00B8AE4F /* Shelf.storyboard */,
-				E400052821EE1F8D00B8AE4F /* ShelfViewController.swift */,
-				E400052921EE1F8D00B8AE4F /* ShelfCollectionViewController.swift */,
-			);
-			path = Shelf;
-			sourceTree = "<group>";
-		};
 		E400052B21EE1F8D00B8AE4F /* ManageTable */ = {
 			isa = PBXGroup;
 			children = (
@@ -465,6 +460,17 @@
 				E400057921EE2CDF00B8AE4F /* NB.swift */,
 			);
 			path = NeroBlu;
+			sourceTree = "<group>";
+		};
+		E400059921EEC1EA00B8AE4F /* Shelf */ = {
+			isa = PBXGroup;
+			children = (
+				E40005A321EEC1EA00B8AE4F /* Shelf.storyboard */,
+				E400059A21EEC1EA00B8AE4F /* ShelfViewController.swift */,
+				E400059F21EEC1EA00B8AE4F /* ShelfAdapter.swift */,
+				E400059B21EEC1EA00B8AE4F /* ShelfCell.swift */,
+			);
+			path = Shelf;
 			sourceTree = "<group>";
 		};
 		E48EC88121C816FB006980AF = {
@@ -578,6 +584,7 @@
 			isa = PBXGroup;
 			children = (
 				E4A6DAD521C81BA400562935 /* LaunchRepository.swift */,
+				E400059D21EEC1EA00B8AE4F /* ShelfRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -585,7 +592,7 @@
 		E4A6DAE521C81BA400562935 /* Translator */ = {
 			isa = PBXGroup;
 			children = (
-				E4A6DAED21C81BA400562935 /* CalendarSettingTranslator.swift */,
+				E40005A121EEC1EA00B8AE4F /* ShelfTranslator.swift */,
 			);
 			path = Translator;
 			sourceTree = "<group>";
@@ -594,6 +601,7 @@
 			isa = PBXGroup;
 			children = (
 				E4A6DAF021C81BA400562935 /* LaunchPresenter.swift */,
+				E40005A221EEC1EA00B8AE4F /* ShelfPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -669,6 +677,7 @@
 			children = (
 				E4A6DB3A21C81BA500562935 /* Bootstrap.storyboard */,
 				E4A6DB4D21C81BA500562935 /* BootstrapViewController.swift */,
+				E400059921EEC1EA00B8AE4F /* Shelf */,
 				E4A6DB3E21C81BA500562935 /* Launch */,
 				E4A6DB2B21C81BA500562935 /* Test */,
 			);
@@ -821,6 +830,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E48EC89821C816FB006980AF /* LaunchScreen.storyboard in Resources */,
+				E40005AD21EEC1EA00B8AE4F /* Shelf.storyboard in Resources */,
 				E400054121EE1F8D00B8AE4F /* Book.storyboard in Resources */,
 				E48EC89521C816FB006980AF /* Assets.xcassets in Resources */,
 				E4A6DBFA21C81BA500562935 /* Bootstrap.storyboard in Resources */,
@@ -832,7 +842,6 @@
 				E4A6DBEF21C81BA500562935 /* Test.storyboard in Resources */,
 				E4A6DBFD21C81BA500562935 /* Launch.storyboard in Resources */,
 				E400053D21EE1F8D00B8AE4F /* Sentence.storyboard in Resources */,
-				E400054621EE1F8D00B8AE4F /* Shelf.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -927,7 +936,6 @@
 				E400053821EE1F8D00B8AE4F /* ChapterViewController.swift in Sources */,
 				E4A6DC5521C81E1E00562935 /* DialogFadeBehavior.swift in Sources */,
 				E400058221EE2CDF00B8AE4F /* NBCellView.swift in Sources */,
-				E400054421EE1F8D00B8AE4F /* ShelfViewController.swift in Sources */,
 				E400055021EE218B00B8AE4F /* Shelf.swift in Sources */,
 				E4A6DC5821C81E1E00562935 /* File.swift in Sources */,
 				E4A6DBD621C81BA500562935 /* Notification+App.swift in Sources */,
@@ -947,7 +955,10 @@
 				E400053121EE1F8D00B8AE4F /* ConfigureChildViewController.swift in Sources */,
 				E400057F21EE2CDF00B8AE4F /* NBTextInput.swift in Sources */,
 				E400053421EE1F8D00B8AE4F /* ConfigureViewController.swift in Sources */,
+				E40005A921EEC1EA00B8AE4F /* ShelfAdapter.swift in Sources */,
+				E40005A421EEC1EA00B8AE4F /* ShelfViewController.swift in Sources */,
 				E4A6DC5B21C81E1E00562935 /* TextFieldManager.swift in Sources */,
+				E40005A521EEC1EA00B8AE4F /* ShelfCell.swift in Sources */,
 				E400055621EE218B00B8AE4F /* GlobalConfigure.swift in Sources */,
 				E4A6DBDE21C81BA500562935 /* Font+Definition.swift in Sources */,
 				E400052F21EE1F8D00B8AE4F /* ConfigureMenuViewController.swift in Sources */,
@@ -961,6 +972,7 @@
 				E40004F321EE1F2500B8AE4F /* DataManagableEnum.swift in Sources */,
 				E4A6DB8621C81BA500562935 /* Json.swift in Sources */,
 				E4A6DC5D21C81E1E00562935 /* WireframeHelper.swift in Sources */,
+				E40005AB21EEC1EA00B8AE4F /* ShelfTranslator.swift in Sources */,
 				E400058721EE2CE000B8AE4F /* NB+UIViewController.swift in Sources */,
 				E40004F221EE1F2500B8AE4F /* DataManagableEntity.swift in Sources */,
 				E400054221EE1F8D00B8AE4F /* BookMenuViewController.swift in Sources */,
@@ -973,6 +985,7 @@
 				E4A6DBBD21C81BA500562935 /* LaunchPresenter.swift in Sources */,
 				E4A6DBD321C81BA500562935 /* UIImage+App.swift in Sources */,
 				E400052E21EE1F8D00B8AE4F /* ConfigureTextFieldViewController.swift in Sources */,
+				E40005A721EEC1EA00B8AE4F /* ShelfRepository.swift in Sources */,
 				E400053321EE1F8D00B8AE4F /* ConfigureChapterViewController.swift in Sources */,
 				E4A6DBFE21C81BA500562935 /* LaunchViewController.swift in Sources */,
 				E400058021EE2CDF00B8AE4F /* NBStoryboard.swift in Sources */,
@@ -996,7 +1009,6 @@
 				E4A6DBCC21C81BA500562935 /* Array+App.swift in Sources */,
 				E4A6DBE221C81BA500562935 /* Button.swift in Sources */,
 				E4A6DBDC21C81BA500562935 /* PushNotification.swift in Sources */,
-				E400054521EE1F8D00B8AE4F /* ShelfCollectionViewController.swift in Sources */,
 				E4A6DC3521C81BA500562935 /* AppConfig.swift in Sources */,
 				E4A6DC4C21C81E1E00562935 /* Appearances.swift in Sources */,
 				E4A6DC5C21C81E1E00562935 /* Timer.swift in Sources */,
@@ -1004,6 +1016,7 @@
 				E400053521EE1F8D00B8AE4F /* ConfigureSentenceViewController.swift in Sources */,
 				E40004F421EE1F2500B8AE4F /* Extensions.swift in Sources */,
 				E4A6DBE921C81BA500562935 /* UnhighlightCell.swift in Sources */,
+				E40005AC21EEC1EA00B8AE4F /* ShelfPresenter.swift in Sources */,
 				E4A6DBD921C81BA500562935 /* Dimansions+Definition.swift in Sources */,
 				E40004F021EE1F2500B8AE4F /* Array+DataManager.swift in Sources */,
 				E4A6DBCB21C81BA500562935 /* Number+App.swift in Sources */,
@@ -1018,7 +1031,6 @@
 				E40004F821EE1F5200B8AE4F /* HUD.swift in Sources */,
 				E4A6DC2821C81BA500562935 /* Configurable.swift in Sources */,
 				E400053E21EE1F8D00B8AE4F /* SentenceTableViewController.swift in Sources */,
-				E4A6DBBB21C81BA500562935 /* CalendarSettingTranslator.swift in Sources */,
 				E400059221EE2CE000B8AE4F /* App.swift in Sources */,
 				E4A6DC5321C81E1E00562935 /* DialogBottomDrawBehavior.swift in Sources */,
 				E4A6DBDB21C81BA500562935 /* File+Definition.swift in Sources */,

@@ -1,11 +1,16 @@
-/**
- * Novel Writter App
- * (c) NeroBlu All Rights Reserved.
- */
+//
+//  MyProject
+//  Copyright (c) Yuichi Nakayasu. All rights reserved.
+//
 import UIKit
 
-/// 書棚画面ビューコントローラ
 class ShelfViewController: UIViewController {
+
+    var presenter: ShelfPresenterProtocol!
+    
+    private var adapter: ShelfAdapter!
+    
+    let editButtonDefaultWidth = 68.f
     
     @IBOutlet private weak var collectionView: UICollectionView!
     @IBOutlet private weak var removeButton: UIButton!
@@ -13,11 +18,7 @@ class ShelfViewController: UIViewController {
     @IBOutlet private weak var editButton: UIButton!
     @IBOutlet private weak var bookNameLabel: UILabel!
     @IBOutlet private weak var bookAuthorLabel: UILabel!
-    
-    let editButtonDefaultWidth = 68.f
     @IBOutlet private weak var editButtonWidth: NSLayoutConstraint!
-    
-    private var adapter: ShelfCollectionViewController!
     
     /// 選択された書籍
     var selectedBook: Book? {
@@ -39,19 +40,10 @@ class ShelfViewController: UIViewController {
             self.editButtonWidth.constant = v ? self.editButtonDefaultWidth : 0.f
         }
     }
-    
-    /// 自身のインスタンスを生成する
-    /// - returns: 新しい自身のインスタンス
-    class func create() -> ShelfViewController {
-        let ret = App.Storyboard("Shelf").get(ShelfViewController.self)
-        return ret
-    }
-    
-    // MARK: - ライフサイクル
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-		self.setupCollectionView()
+        adapter = ShelfAdapter(collectionView, delegate: self)
         self.selectedBook = nil
     }
     
@@ -59,15 +51,6 @@ class ShelfViewController: UIViewController {
         super.viewWillAppear(animated)
         self.reload()
     }
-	
-	// MARK: - セットアップ
-	
-	/// コレクションビューのセットアップ
-	func setupCollectionView() {
-		self.adapter = ShelfCollectionViewController()
-		self.adapter.owner = self
-		self.adapter.setup(self.collectionView)
-	}
     
     /// 更新
     func reload() {
@@ -76,13 +59,6 @@ class ShelfViewController: UIViewController {
         if let selectedBook = self.selectedBook, let loadedBook = App.shelf.books.entityBy(id: selectedBook.id) {
             self.selectedBook = loadedBook
         }
-    }
-    
-    // MARK: - イベント
-	
-    /// 書籍セル押下時
-    func didTapBookCell(of book: Book) {
-        self.selectedBook = book
     }
     
     /// 書籍を読むボタン押下時
@@ -124,9 +100,34 @@ class ShelfViewController: UIViewController {
     
     /// 全体設定ボタン押下時
     @IBAction func didTapConfigureButton() {
-        self.present(ConfigureViewController.create(scenario: .global) { vc, configuredBook in
-            App.globalConfigure.save(book: configuredBook)
-            vc.dismiss()
-        })
+//        self.present(ConfigureViewController.create(scenario: .global) { vc, configuredBook in
+//            App.globalConfigure.save(book: configuredBook)
+//            vc.dismiss()
+//        })
+    }
+}
+
+extension ShelfViewController: ShelfViewProtocol {
+
+}
+
+extension ShelfViewController: ShelfAdapterDelegate {
+    
+    func numberOfBooks(in adapter: ShelfAdapter) -> Int {
+        return App.shelf.books.count
+    }
+    
+    func shelfAdapter(_ adapter: ShelfAdapter, bookAt index: Int) -> Book {
+        return App.shelf.books[index]
+    }
+    
+    func shelfAdapter(_ adapter: ShelfAdapter, isSelectedAt index: Int) -> Bool {
+        guard let selectedBook = self.selectedBook else { return false }
+        return App.shelf.books[index].id == selectedBook.id
+    }
+    
+    func shelfAdapter(_ adapter: ShelfAdapter, didSelectBook book: Book) {
+        self.selectedBook = book
+        collectionView.reloadData()
     }
 }
