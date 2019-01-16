@@ -88,11 +88,9 @@
 		E4A6DBCE21C81BA500562935 /* UIView+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB0221C81BA400562935 /* UIView+App.swift */; };
 		E4A6DBD021C81BA500562935 /* UIControl+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB0421C81BA400562935 /* UIControl+App.swift */; };
 		E4A6DBD121C81BA500562935 /* Codable+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB0521C81BA400562935 /* Codable+App.swift */; };
-		E4A6DBD221C81BA500562935 /* Directory+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB0621C81BA400562935 /* Directory+App.swift */; };
 		E4A6DBD321C81BA500562935 /* UIImage+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB0721C81BA400562935 /* UIImage+App.swift */; };
 		E4A6DBD421C81BA500562935 /* UIApplication+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB0821C81BA400562935 /* UIApplication+App.swift */; };
 		E4A6DBD521C81BA500562935 /* Date+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB0921C81BA400562935 /* Date+App.swift */; };
-		E4A6DBD621C81BA500562935 /* Notification+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB0A21C81BA400562935 /* Notification+App.swift */; };
 		E4A6DBD721C81BA500562935 /* UITextField+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB0B21C81BA400562935 /* UITextField+App.swift */; };
 		E4A6DBD821C81BA500562935 /* Color+Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB0D21C81BA400562935 /* Color+Definition.swift */; };
 		E4A6DBD921C81BA500562935 /* Dimansions+Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6DB0E21C81BA400562935 /* Dimansions+Definition.swift */; };
@@ -236,11 +234,9 @@
 		E4A6DB0221C81BA400562935 /* UIView+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+App.swift"; sourceTree = "<group>"; };
 		E4A6DB0421C81BA400562935 /* UIControl+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+App.swift"; sourceTree = "<group>"; };
 		E4A6DB0521C81BA400562935 /* Codable+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Codable+App.swift"; sourceTree = "<group>"; };
-		E4A6DB0621C81BA400562935 /* Directory+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Directory+App.swift"; sourceTree = "<group>"; };
 		E4A6DB0721C81BA400562935 /* UIImage+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+App.swift"; sourceTree = "<group>"; };
 		E4A6DB0821C81BA400562935 /* UIApplication+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+App.swift"; sourceTree = "<group>"; };
 		E4A6DB0921C81BA400562935 /* Date+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+App.swift"; sourceTree = "<group>"; };
-		E4A6DB0A21C81BA400562935 /* Notification+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification+App.swift"; sourceTree = "<group>"; };
 		E4A6DB0B21C81BA400562935 /* UITextField+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+App.swift"; sourceTree = "<group>"; };
 		E4A6DB0D21C81BA400562935 /* Color+Definition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Definition.swift"; sourceTree = "<group>"; };
 		E4A6DB0E21C81BA400562935 /* Dimansions+Definition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dimansions+Definition.swift"; sourceTree = "<group>"; };
@@ -625,8 +621,6 @@
 				E4A6DAFE21C81BA400562935 /* IndexPath+App.swift */,
 				E4A6DAFF21C81BA400562935 /* Number+App.swift */,
 				E4A6DB0521C81BA400562935 /* Codable+App.swift */,
-				E4A6DB0621C81BA400562935 /* Directory+App.swift */,
-				E4A6DB0A21C81BA400562935 /* Notification+App.swift */,
 				E4A6DB0821C81BA400562935 /* UIApplication+App.swift */,
 				E4A6DAFA21C81BA400562935 /* UIColor+App.swift */,
 				E4A6DB0421C81BA400562935 /* UIControl+App.swift */,
@@ -950,7 +944,6 @@
 				E400058221EE2CDF00B8AE4F /* NBCellView.swift in Sources */,
 				E400055021EE218B00B8AE4F /* Shelf.swift in Sources */,
 				E4A6DC5821C81E1E00562935 /* File.swift in Sources */,
-				E4A6DBD621C81BA500562935 /* Notification+App.swift in Sources */,
 				E400053621EE1F8D00B8AE4F /* ChapterTableViewController.swift in Sources */,
 				E4A6DBD121C81BA500562935 /* Codable+App.swift in Sources */,
 				E4A6DC4D21C81E1E00562935 /* KeyboardManager.swift in Sources */,
@@ -1051,7 +1044,6 @@
 				E4A6DC5321C81E1E00562935 /* DialogBottomDrawBehavior.swift in Sources */,
 				E4A6DBDB21C81BA500562935 /* File+Definition.swift in Sources */,
 				E4A6DC5121C81E1E00562935 /* DialogTopDrawBehavior.swift in Sources */,
-				E4A6DBD221C81BA500562935 /* Directory+App.swift in Sources */,
 				E400058E21EE2CE000B8AE4F /* NBDialog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
