@@ -63,6 +63,10 @@
 		E40005AB21EEC1EA00B8AE4F /* ShelfTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40005A121EEC1EA00B8AE4F /* ShelfTranslator.swift */; };
 		E40005AC21EEC1EA00B8AE4F /* ShelfPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40005A221EEC1EA00B8AE4F /* ShelfPresenter.swift */; };
 		E40005AD21EEC1EA00B8AE4F /* Shelf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40005A321EEC1EA00B8AE4F /* Shelf.storyboard */; };
+		E40005B221EEDA7800B8AE4F /* ShelfEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40005AE21EEDA7800B8AE4F /* ShelfEntity.swift */; };
+		E40005B321EEDA7800B8AE4F /* ChapterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40005AF21EEDA7800B8AE4F /* ChapterEntity.swift */; };
+		E40005B421EEDA7800B8AE4F /* SentenceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40005B021EEDA7800B8AE4F /* SentenceEntity.swift */; };
+		E40005B521EEDA7800B8AE4F /* BookEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40005B121EEDA7800B8AE4F /* BookEntity.swift */; };
 		E48EC89321C816FB006980AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89121C816FB006980AF /* Main.storyboard */; };
 		E48EC89521C816FB006980AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89421C816FB006980AF /* Assets.xcassets */; };
 		E48EC89821C816FB006980AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89621C816FB006980AF /* LaunchScreen.storyboard */; };
@@ -203,6 +207,10 @@
 		E40005A121EEC1EA00B8AE4F /* ShelfTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfTranslator.swift; sourceTree = "<group>"; };
 		E40005A221EEC1EA00B8AE4F /* ShelfPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfPresenter.swift; sourceTree = "<group>"; };
 		E40005A321EEC1EA00B8AE4F /* Shelf.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shelf.storyboard; sourceTree = "<group>"; };
+		E40005AE21EEDA7800B8AE4F /* ShelfEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelfEntity.swift; sourceTree = "<group>"; };
+		E40005AF21EEDA7800B8AE4F /* ChapterEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterEntity.swift; sourceTree = "<group>"; };
+		E40005B021EEDA7800B8AE4F /* SentenceEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceEntity.swift; sourceTree = "<group>"; };
+		E40005B121EEDA7800B8AE4F /* BookEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookEntity.swift; sourceTree = "<group>"; };
 		E48EC88A21C816FB006980AF /* Nobel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nobel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48EC89221C816FB006980AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E48EC89421C816FB006980AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -717,6 +725,10 @@
 			isa = PBXGroup;
 			children = (
 				E4A6DB8521C81BA500562935 /* AppConfig.swift */,
+				E40005AE21EEDA7800B8AE4F /* ShelfEntity.swift */,
+				E40005B121EEDA7800B8AE4F /* BookEntity.swift */,
+				E40005AF21EEDA7800B8AE4F /* ChapterEntity.swift */,
+				E40005B021EEDA7800B8AE4F /* SentenceEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -945,9 +957,11 @@
 				E4A6DC2721C81BA500562935 /* Translator.swift in Sources */,
 				E4A6DBD521C81BA500562935 /* Date+App.swift in Sources */,
 				E4A6DB9221C81BA500562935 /* TextSize.swift in Sources */,
+				E40005B221EEDA7800B8AE4F /* ShelfEntity.swift in Sources */,
 				E4A6DC5E21C81E1E00562935 /* ApplicationLifeCycle.swift in Sources */,
 				E4A6DBD721C81BA500562935 /* UITextField+App.swift in Sources */,
 				E4A6DBE121C81BA500562935 /* ClearButton.swift in Sources */,
+				E40005B521EEDA7800B8AE4F /* BookEntity.swift in Sources */,
 				E400054021EE1F8D00B8AE4F /* VerticalViewController.swift in Sources */,
 				E400055521EE218B00B8AE4F /* Chapter.swift in Sources */,
 				E4A6DBEE21C81BA500562935 /* TestViewController.swift in Sources */,
@@ -992,6 +1006,7 @@
 				E4A6DC5621C81E1E00562935 /* Dialog.swift in Sources */,
 				E4A6DBD421C81BA500562935 /* UIApplication+App.swift in Sources */,
 				E4A6DBDD21C81BA500562935 /* Builder.swift in Sources */,
+				E40005B421EEDA7800B8AE4F /* SentenceEntity.swift in Sources */,
 				E400054721EE1F8D00B8AE4F /* ManageTableViewController.swift in Sources */,
 				E4A6DC0921C81BA500562935 /* BootstrapViewController.swift in Sources */,
 				E4A6DBE021C81BA500562935 /* Application.swift in Sources */,
@@ -1009,6 +1024,7 @@
 				E4A6DBCC21C81BA500562935 /* Array+App.swift in Sources */,
 				E4A6DBE221C81BA500562935 /* Button.swift in Sources */,
 				E4A6DBDC21C81BA500562935 /* PushNotification.swift in Sources */,
+				E40005B321EEDA7800B8AE4F /* ChapterEntity.swift in Sources */,
 				E4A6DC3521C81BA500562935 /* AppConfig.swift in Sources */,
 				E4A6DC4C21C81E1E00562935 /* Appearances.swift in Sources */,
 				E4A6DC5C21C81E1E00562935 /* Timer.swift in Sources */,
