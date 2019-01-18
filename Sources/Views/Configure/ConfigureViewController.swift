@@ -52,4 +52,61 @@ class ConfigureViewController: UIViewController {
 
 extension ConfigureViewController: ConfigureAdapterDelegate {
     
+    func configureAdapter(_ adapter: ConfigureAdapter, titleForRow row: ConfigureRow) -> String {
+        switch row {
+        case .bookName: return "作品名"
+        case .bookAuthor: return "作者名"
+        case .colorTheme: return "カラーテーマ"
+        case .fontType: return "フォント"
+        case .textSize: return "文字サイズ"
+        case .cover: return "表紙"
+        case .chapter: return "章"
+        case .discard: return "書籍の追加をキャンセルする"
+        }
+    }
+    
+    func configureAdapter(_ adapter: ConfigureAdapter, valueForRow row: ConfigureRow) -> String {
+        switch row {
+        case .bookName:   return configuredBook.name
+        case .bookAuthor: return configuredBook.author
+        case .colorTheme: return configuredBook.colorTheme.name
+        case .fontType:   return configuredBook.fontType.name
+        case .textSize:   return configuredBook.textSize.name
+        case .chapter:    return "\(configuredBook.chapters.count)個"
+        default: return ""
+        }
+    }
+    
+    func didSelectBookName(in configureAdapter: ConfigureAdapter) {
+        
+    }
+    
+    func didSelectBookAuthor(in configureAdapter: ConfigureAdapter) {
+        
+    }
+    
+    func didSelectColorTheme(in configureAdapter: ConfigureAdapter) {
+        
+    }
+    
+    func didSelectFontType(in configureAdapter: ConfigureAdapter) {
+        
+    }
+    
+    func didSelectTextSize(in configureAdapter: ConfigureAdapter) {
+        
+    }
+    
+    func didSelectCover(in configureAdapter: ConfigureAdapter) {
+        
+    }
+    
+    func didSelectChapter(in configureAdapter: ConfigureAdapter) {
+        
+    }
+    
+    func didSelectDiscard(in configureAdapter: ConfigureAdapter) {
+        configuredBook.delete()
+        Wireframe.dismiss(from: self)
+    }
 }
