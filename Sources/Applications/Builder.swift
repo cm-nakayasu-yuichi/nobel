@@ -42,6 +42,14 @@ class Builder {
         view.configured = configured
         return view
     }
+    
+    func configureText(kind: ConfigureTextViewController.Kind, initial: String, edited: ConfigureTextViewController.Edited? = nil) -> ConfigureTextViewController {
+        let view = instantiate(ConfigureTextViewController.self, storyboardName: "ConfigureText")
+        view.kind = kind
+        view.initialText = initial
+        view.edited = edited
+        return view
+    }
         
     func test() -> TestViewController {
         let view = instantiate(TestViewController.self, storyboardName: "Test")

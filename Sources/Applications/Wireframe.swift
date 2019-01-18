@@ -21,6 +21,11 @@ class Wireframe {
         helper.present(helper.withinNavigation(viewController), from: fromViewController)
     }
     
+    static func showConfigureText(from fromViewController: UIViewController, kind: ConfigureTextViewController.Kind, initial: String, edited: ConfigureTextViewController.Edited? = nil) {
+        let viewController = builder.configureText(kind: kind, initial: initial, edited: edited)
+        helper.push(viewController, from: fromViewController)
+    }
+    
     static func showTest(from fromViewController: UIViewController) {
         let viewController = builder.test()
         helper.present(helper.withinNavigation(viewController), from: fromViewController)

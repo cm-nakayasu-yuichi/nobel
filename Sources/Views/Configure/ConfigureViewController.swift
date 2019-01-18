@@ -78,11 +78,15 @@ extension ConfigureViewController: ConfigureAdapterDelegate {
     }
     
     func didSelectBookName(in configureAdapter: ConfigureAdapter) {
-        
+        Wireframe.showConfigureText(from: self, kind: .bookName, initial: configuredBook.name) { [unowned self] text in
+            self.configuredBook.name = text
+        }
     }
     
     func didSelectBookAuthor(in configureAdapter: ConfigureAdapter) {
-        
+        Wireframe.showConfigureText(from: self, kind: .author, initial: configuredBook.author) { [unowned self] text in
+            self.configuredBook.author = text
+        }
     }
     
     func didSelectColorTheme(in configureAdapter: ConfigureAdapter) {

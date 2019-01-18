@@ -57,6 +57,8 @@
 		E40005DA21EF447F00B8AE4F /* ConfigureAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40005D021EF447F00B8AE4F /* ConfigureAdapter.swift */; };
 		E40005DD21EF447F00B8AE4F /* Configure.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40005D321EF447F00B8AE4F /* Configure.storyboard */; };
 		E40005DF21EF788400B8AE4F /* ConfigureRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40005DE21EF788400B8AE4F /* ConfigureRow.swift */; };
+		E40005F821F176C800B8AE4F /* ConfigureTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40005F621F176C700B8AE4F /* ConfigureTextViewController.swift */; };
+		E40005F921F176C800B8AE4F /* ConfigureText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40005F721F176C700B8AE4F /* ConfigureText.storyboard */; };
 		E48EC89321C816FB006980AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89121C816FB006980AF /* Main.storyboard */; };
 		E48EC89521C816FB006980AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89421C816FB006980AF /* Assets.xcassets */; };
 		E48EC89821C816FB006980AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EC89621C816FB006980AF /* LaunchScreen.storyboard */; };
@@ -189,6 +191,8 @@
 		E40005D021EF447F00B8AE4F /* ConfigureAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureAdapter.swift; sourceTree = "<group>"; };
 		E40005D321EF447F00B8AE4F /* Configure.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Configure.storyboard; sourceTree = "<group>"; };
 		E40005DE21EF788400B8AE4F /* ConfigureRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureRow.swift; sourceTree = "<group>"; };
+		E40005F621F176C700B8AE4F /* ConfigureTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureTextViewController.swift; sourceTree = "<group>"; };
+		E40005F721F176C700B8AE4F /* ConfigureText.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ConfigureText.storyboard; sourceTree = "<group>"; };
 		E48EC88A21C816FB006980AF /* Nobel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nobel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48EC89221C816FB006980AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E48EC89421C816FB006980AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -430,6 +434,15 @@
 			path = Configure;
 			sourceTree = "<group>";
 		};
+		E40005F521F176C700B8AE4F /* ConfigureText */ = {
+			isa = PBXGroup;
+			children = (
+				E40005F721F176C700B8AE4F /* ConfigureText.storyboard */,
+				E40005F621F176C700B8AE4F /* ConfigureTextViewController.swift */,
+			);
+			path = ConfigureText;
+			sourceTree = "<group>";
+		};
 		E48EC88121C816FB006980AF = {
 			isa = PBXGroup;
 			children = (
@@ -634,6 +647,7 @@
 				E4A6DB4D21C81BA500562935 /* BootstrapViewController.swift */,
 				E400059921EEC1EA00B8AE4F /* Shelf */,
 				E40005B621EF369D00B8AE4F /* Configure */,
+				E40005F521F176C700B8AE4F /* ConfigureText */,
 				E4A6DB3E21C81BA500562935 /* Launch */,
 				E4A6DB2B21C81BA500562935 /* Test */,
 			);
@@ -789,6 +803,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E40005F921F176C800B8AE4F /* ConfigureText.storyboard in Resources */,
 				E40005DD21EF447F00B8AE4F /* Configure.storyboard in Resources */,
 				E48EC89821C816FB006980AF /* LaunchScreen.storyboard in Resources */,
 				E40005AD21EEC1EA00B8AE4F /* Shelf.storyboard in Resources */,
@@ -955,6 +970,7 @@
 				E400053921EE1F8D00B8AE4F /* EditBoardViewController.swift in Sources */,
 				E400057D21EE2CDF00B8AE4F /* NBThread.swift in Sources */,
 				E400055421EE218B00B8AE4F /* Book.swift in Sources */,
+				E40005F821F176C800B8AE4F /* ConfigureTextViewController.swift in Sources */,
 				E4A6DBD821C81BA500562935 /* Color+Definition.swift in Sources */,
 				E4A6DB9021C81BA500562935 /* ColorTheme.swift in Sources */,
 				E4A6DB9121C81BA500562935 /* FontType.swift in Sources */,
