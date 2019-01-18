@@ -102,10 +102,9 @@ class ShelfViewController: UIViewController {
     
     /// 全体設定ボタン押下時
     @IBAction func didTapConfigureButton() {
-//        self.present(ConfigureViewController.create(scenario: .global) { vc, configuredBook in
-//            App.globalConfigure.save(book: configuredBook)
-//            vc.dismiss()
-//        })
+        Wireframe.showConfigure(from: self, scenario: .global) { _, configuredBook in
+            App.globalConfigure.save(book: configuredBook)
+        }
     }
 }
 
