@@ -39,60 +39,60 @@ enum ColorTheme: Int, DataManagableEnum {
     /// 背景色
     var backgroundColor: UIColor {
         switch self {
-        case .standard:       return UIColor(rgb: 0xFFFFFF)
-        case .secondhand:     return UIColor(rgb: 0xEDE7D9)
-        case .newspaper:      return UIColor(rgb: 0xEFF0EA)
-        case .limegreen:      return UIColor(rgb: 0xEDFC6D)
-        case .loveromance:    return UIColor(rgb: 0xFFF3FD)
-        case .night:          return UIColor(rgb: 0x333333)
-        case .sciencefiction: return UIColor(rgb: 0x000000)
-        case .fluorescent:    return UIColor(rgb: 0x0A0813)
-        case .concrete:       return UIColor(rgb: 0x333333)
+        case .standard:       return #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        case .secondhand:     return #colorLiteral(red: 0.9294117647, green: 0.9058823529, blue: 0.8509803922, alpha: 1)
+        case .newspaper:      return #colorLiteral(red: 0.937254902, green: 0.9411764706, blue: 0.9176470588, alpha: 1)
+        case .limegreen:      return #colorLiteral(red: 0.9294117647, green: 0.9882352941, blue: 0.4274509804, alpha: 1)
+        case .loveromance:    return #colorLiteral(red: 1, green: 0.9529411765, blue: 0.9921568627, alpha: 1)
+        case .night:          return #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+        case .sciencefiction: return #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        case .fluorescent:    return #colorLiteral(red: 0.03921568627, green: 0.03137254902, blue: 0.07450980392, alpha: 1)
+        case .concrete:       return #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
         }
     }
     
     /// 文字色
     var textColor: UIColor {
         switch self {
-        case .standard:       return UIColor(rgb: 0x333333)
-        case .secondhand:     return UIColor(rgb: 0x392B1A)
-        case .newspaper:      return UIColor(rgb: 0x272825)
-        case .limegreen:      return UIColor(rgb: 0x738D39)
-        case .loveromance:    return UIColor(rgb: 0xE71660)
-        case .night:          return UIColor(rgb: 0x333333)
-        case .sciencefiction: return UIColor(rgb: 0x48CFE7)
-        case .fluorescent:    return UIColor(rgb: 0xAEEE4C)
-        case .concrete:       return UIColor(rgb: 0x333333)
+        case .standard:       return #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+        case .secondhand:     return #colorLiteral(red: 0.2235294118, green: 0.168627451, blue: 0.1019607843, alpha: 1)
+        case .newspaper:      return #colorLiteral(red: 0.1529411765, green: 0.1568627451, blue: 0.1450980392, alpha: 1)
+        case .limegreen:      return #colorLiteral(red: 0.4509803922, green: 0.5529411765, blue: 0.2235294118, alpha: 1)
+        case .loveromance:    return #colorLiteral(red: 0.9058823529, green: 0.0862745098, blue: 0.3764705882, alpha: 1)
+        case .night:          return #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+        case .sciencefiction: return #colorLiteral(red: 0.2823529412, green: 0.8117647059, blue: 0.9058823529, alpha: 1)
+        case .fluorescent:    return #colorLiteral(red: 0.6823529412, green: 0.9333333333, blue: 0.2980392157, alpha: 1)
+        case .concrete:       return #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
         }
     }
     
     /// スライダーのトラック色
     var sliderTrackColor: UIColor {
         switch self {
-        case .standard:       return UIColor(rgb: 0xC4C4C4)
-        case .secondhand:     return UIColor(rgb: 0xC4C4C4)
-        case .newspaper:      return UIColor(rgb: 0x8E958D)
-        case .limegreen:      return UIColor(rgb: 0x738D39)
-        case .loveromance:    return UIColor(rgb: 0xF8BDD1)
-        case .night:          return UIColor(rgb: 0x333333)
-        case .sciencefiction: return UIColor(rgb: 0x708D92)
-        case .fluorescent:    return UIColor(rgb: 0xAEEE4C)
-        case .concrete:       return UIColor(rgb: 0x333333)
+        case .standard:       return #colorLiteral(red: 0.768627451, green: 0.768627451, blue: 0.768627451, alpha: 1)
+        case .secondhand:     return #colorLiteral(red: 0.768627451, green: 0.768627451, blue: 0.768627451, alpha: 1)
+        case .newspaper:      return #colorLiteral(red: 0.5568627451, green: 0.5843137255, blue: 0.5529411765, alpha: 1)
+        case .limegreen:      return #colorLiteral(red: 0.4509803922, green: 0.5529411765, blue: 0.2235294118, alpha: 1)
+        case .loveromance:    return #colorLiteral(red: 0.9725490196, green: 0.7411764706, blue: 0.8196078431, alpha: 1)
+        case .night:          return #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+        case .sciencefiction: return #colorLiteral(red: 0.4392156863, green: 0.5529411765, blue: 0.5725490196, alpha: 1)
+        case .fluorescent:    return #colorLiteral(red: 0.6823529412, green: 0.9333333333, blue: 0.2980392157, alpha: 1)
+        case .concrete:       return #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
         }
     }
     
     /// スライダーのサム色
     var sliderThumbColor: UIColor {
         switch self {
-        case .standard:       return UIColor(rgb: 0x767676)
-        case .secondhand:     return UIColor(rgb: 0x9D8C78)
-        case .newspaper:      return UIColor(rgb: 0x303E41)
-        case .limegreen:      return UIColor(rgb: 0x738D39)
-        case .loveromance:    return UIColor(rgb: 0xE880A5)
-        case .night:          return UIColor(rgb: 0x333333)
-        case .sciencefiction: return UIColor(rgb: 0x2A8092)
-        case .fluorescent:    return UIColor(rgb: 0xAEEE4C)
-        case .concrete:       return UIColor(rgb: 0x333333)
+        case .standard:       return #colorLiteral(red: 0.462745098, green: 0.462745098, blue: 0.462745098, alpha: 1)
+        case .secondhand:     return #colorLiteral(red: 0.6156862745, green: 0.5490196078, blue: 0.4705882353, alpha: 1)
+        case .newspaper:      return #colorLiteral(red: 0.1882352941, green: 0.2431372549, blue: 0.2549019608, alpha: 1)
+        case .limegreen:      return #colorLiteral(red: 0.4509803922, green: 0.5529411765, blue: 0.2235294118, alpha: 1)
+        case .loveromance:    return #colorLiteral(red: 0.9098039216, green: 0.5019607843, blue: 0.6470588235, alpha: 1)
+        case .night:          return #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+        case .sciencefiction: return #colorLiteral(red: 0.1647058824, green: 0.5019607843, blue: 0.5725490196, alpha: 1)
+        case .fluorescent:    return #colorLiteral(red: 0.6823529412, green: 0.9333333333, blue: 0.2980392157, alpha: 1)
+        case .concrete:       return #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
         }
     }
     
